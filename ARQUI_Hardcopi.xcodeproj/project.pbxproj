@@ -13,6 +13,8 @@
 		0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2226531DF7005A2B77 /* Main.storyboard */; };
 		0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2526531DFC005A2B77 /* Assets.xcassets */; };
 		0B299D2926531DFC005A2B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2726531DFC005A2B77 /* LaunchScreen.storyboard */; };
+		0B299D46265321C9005A2B77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D45265321C9005A2B77 /* GoogleService-Info.plist */; };
+		ABFA008CB0522274050385E5 /* Pods_ARQUI_Hardcopi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0B299D2526531DFC005A2B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B299D2826531DFC005A2B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B299D2A26531DFC005A2B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B299D45265321C9005A2B77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.release.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.release.xcconfig"; sourceTree = "<group>"; };
+		DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBDE8619D417BE1773B54E9 /* Pods-ARQUI_Hardcopi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.debug.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFA008CB0522274050385E5 /* Pods_ARQUI_Hardcopi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0B299D1B26531DF7005A2B77 /* ARQUI_Hardcopi */,
 				0B299D1A26531DF7005A2B77 /* Products */,
+				79984E65D68E7F3C0B4AD3F6 /* Pods */,
+				5789CAB6DD4A169F80E13F91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,27 @@
 				0B299D2526531DFC005A2B77 /* Assets.xcassets */,
 				0B299D2726531DFC005A2B77 /* LaunchScreen.storyboard */,
 				0B299D2A26531DFC005A2B77 /* Info.plist */,
+				0B299D45265321C9005A2B77 /* GoogleService-Info.plist */,
 			);
 			path = ARQUI_Hardcopi;
+			sourceTree = "<group>";
+		};
+		5789CAB6DD4A169F80E13F91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79984E65D68E7F3C0B4AD3F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBBDE8619D417BE1773B54E9 /* Pods-ARQUI_Hardcopi.debug.xcconfig */,
+				B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B299D2D26531DFC005A2B77 /* Build configuration list for PBXNativeTarget "ARQUI_Hardcopi" */;
 			buildPhases = (
+				59126DFA72C2FEE34D50523A /* [CP] Check Pods Manifest.lock */,
 				0B299D1526531DF7005A2B77 /* Sources */,
 				0B299D1626531DF7005A2B77 /* Frameworks */,
 				0B299D1726531DF7005A2B77 /* Resources */,
+				9149F963219BFC6F67285A4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B299D2926531DFC005A2B77 /* LaunchScreen.storyboard in Resources */,
+				0B299D46265321C9005A2B77 /* GoogleService-Info.plist in Resources */,
 				0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */,
 				0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59126DFA72C2FEE34D50523A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARQUI_Hardcopi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9149F963219BFC6F67285A4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B299D1526531DF7005A2B77 /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		0B299D2E26531DFC005A2B77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBDE8619D417BE1773B54E9 /* Pods-ARQUI_Hardcopi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		0B299D2F26531DFC005A2B77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
