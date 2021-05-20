@@ -222,10 +222,147 @@
             </objects>
             <point key="canvasLocation" x="860" y="-397.39336492890993"/>
         </scene>
+        <!--Feed Table View Controller-->
+        <scene sceneID="Gmh-Ry-Fmd">
+            <objects>
+                <tableViewController id="yOk-VQ-lZa" customClass="FeedTableViewController" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BMS-r6-pA0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookcell" rowHeight="177" id="0dh-cp-8Zc" customClass="BookTableViewCell" customModule="ARQUI_Hardcopi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="390" height="177"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0dh-cp-8Zc" id="l4T-86-96f">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="177"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-1b-A3x">
+                                            <rect key="frame" x="29" y="12" width="107" height="107"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQP-WD-HfG">
+                                            <rect key="frame" x="162" y="13" width="186" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Title of Book">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.18823529411764706" green="0.34901960784313724" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="15" name="Barlow-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4p-C5-hpz">
+                                            <rect key="frame" x="162" y="34" width="186" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Name LastName">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="Barlow-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9B-gX-4jc">
+                                            <rect key="frame" x="162" y="54" width="215" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="ksfdisjfaijdfiasnfadskmfa">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="Barlow-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vys-QP-B8R">
+                                            <rect key="frame" x="162" y="105" width="192" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Label">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.45098039215686275" green="0.74117647058823533" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="12" name="Barlow-Medium"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2H-Wg-GPZ">
+                                            <rect key="frame" x="29" y="127" width="71" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="User Name">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.05811493843793869" green="0.043867990374565125" blue="0.018728334456682205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="Barlow-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvN-Il-SW3">
+                                            <rect key="frame" x="296" y="127" width="74" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.97627419230000001" green="0.53807693720000005" blue="0.62131875749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Request">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="15" name="Barlow-SemiBold"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorName" destination="D4p-C5-hpz" id="XUF-0v-xnO"/>
+                                    <outlet property="bodyTxt" destination="E9B-gX-4jc" id="90k-NQ-Prh"/>
+                                    <outlet property="bookCover" destination="IkP-1b-A3x" id="Hx6-Ia-cft"/>
+                                    <outlet property="bookTitle" destination="MQP-WD-HfG" id="EFj-qu-g2j"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yOk-VQ-lZa" id="Hvc-mG-XIi"/>
+                            <outlet property="delegate" destination="yOk-VQ-lZa" id="S7k-0u-N9V"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pPl-Hr-oNV"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDR-iZ-6Kn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2733.8461538461538" y="-404.50236966824644"/>
+        </scene>
         <!--View Controller-->
+        <scene sceneID="eBV-kO-qdA">
+            <objects>
+                <viewController id="TNg-HG-VMj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z4g-xg-Cpp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="EEZ-HC-BOB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14t-2b-NZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3510.7692307692305" y="-405.21327014218008"/>
+        </scene>
+        <!--Add Book-->
         <scene sceneID="lRE-Ku-gWj">
             <objects>
-                <viewController id="wYM-nj-L9V" sceneMemberID="viewController">
+                <viewController id="wYM-nj-L9V" customClass="VCAddBook" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cUg-rJ-WaE">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,6 +387,9 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enterIsbn:" destination="wYM-nj-L9V" eventType="editingDidEnd" id="RYC-hW-yZS"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IdQ-gc-xzH">
                                 <rect key="frame" x="39" y="235" width="311" height="48"/>
@@ -328,6 +468,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kk4-tn-jbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1914" y="705"/>
+        </scene>
+        <!--BookFeed-->
+        <scene sceneID="gfq-CY-KfP">
+            <objects>
+                <navigationController title="BookFeed" automaticallyAdjustsScrollViewInsets="NO" id="cDQ-5T-K5h" customClass="NavigationC" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VD3-ML-l8S">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="navBar" destination="VD3-ML-l8S" id="2mB-2j-HTQ"/>
+                        <segue destination="yOk-VQ-lZa" kind="relationship" relationship="rootViewController" id="K5E-FW-dFo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ni4-xZ-FKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804.6153846153845" y="-404.50236966824644"/>
         </scene>
     </scenes>
     <resources>

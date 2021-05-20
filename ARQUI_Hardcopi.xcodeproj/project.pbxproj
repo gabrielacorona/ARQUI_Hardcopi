@@ -22,7 +22,13 @@
 		0F61E6AA26562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61E6A926562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png */; };
 		0F61E6AD2656337A0024011D /* VCSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61E6AC2656337A0024011D /* VCSignUp.swift */; };
 		0F61E6BA26563BD80024011D /* VCAddBooko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61E6B926563BD80024011D /* VCAddBooko.swift */; };
-		0FD7681D26545C9D00244C50 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7681F26545C9D00244C50 /* Barlow-Bold.ttf */; };
+		0F61E6BD26563F440024011D /* VCAddBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61E6BC26563F440024011D /* VCAddBook.swift */; };
+		0FA86EE62656435E00F0D04B /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA86EE52656435E00F0D04B /* BookTableViewCell.swift */; };
+		0FA86EE92656446100F0D04B /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA86EE82656446100F0D04B /* FeedTableViewController.swift */; };
+		0FA86EEE265648EE00F0D04B /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FA86EED265648EE00F0D04B /* Barlow-Bold.ttf */; };
+		0FA86EF126564A7B00F0D04B /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FA86EF026564A7B00F0D04B /* Barlow-Black.ttf */; };
+		0FA86EF426564B0700F0D04B /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */; };
+		0FA86EF7265650DD00F0D04B /* NavigationC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA86EF6265650DD00F0D04B /* NavigationC.swift */; };
 		0FD7682326545CA800244C50 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7682526545CA800244C50 /* Barlow-Light.ttf */; };
 		ABFA008CB0522274050385E5 /* Pods_ARQUI_Hardcopi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +51,13 @@
 		0F61E6A926562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-05-19 at 22.43.42.png"; sourceTree = "<group>"; };
 		0F61E6AC2656337A0024011D /* VCSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSignUp.swift; sourceTree = "<group>"; };
 		0F61E6B926563BD80024011D /* VCAddBooko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddBooko.swift; sourceTree = "<group>"; };
-		0FD7681E26545C9D00244C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		0F61E6BC26563F440024011D /* VCAddBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddBook.swift; sourceTree = "<group>"; };
+		0FA86EE52656435E00F0D04B /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		0FA86EE82656446100F0D04B /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		0FA86EED265648EE00F0D04B /* Barlow-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Bold.ttf"; sourceTree = "<group>"; };
+		0FA86EF026564A7B00F0D04B /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Black.ttf"; sourceTree = "<group>"; };
+		0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Barlow-Black.ttf"; path = "Assets/Barlow-Black.ttf"; sourceTree = "<group>"; };
+		0FA86EF6265650DD00F0D04B /* NavigationC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationC.swift; sourceTree = "<group>"; };
 		0FD7682426545CA800244C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Barlow-Light.ttf"; sourceTree = "<group>"; };
 		B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.release.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.release.xcconfig"; sourceTree = "<group>"; };
 		DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,8 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				0F61E6A126562CAD0024011D /* Assets */,
-				0FD7681F26545C9D00244C50 /* Barlow-Bold.ttf */,
 				0F61E6A626562E460024011D /* Comfortaa-Bold.ttf */,
+				0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */,
+				0FA86EED265648EE00F0D04B /* Barlow-Bold.ttf */,
 				0FD7682526545CA800244C50 /* Barlow-Light.ttf */,
 				0F272FAF2654540F00FC23DB /* Barlow-Medium.ttf */,
 				0F272FB72654540F00FC23DB /* Barlow-Regular.ttf */,
@@ -97,6 +110,10 @@
 				0B299D1E26531DF7005A2B77 /* SceneDelegate.swift */,
 				0B299D2026531DF7005A2B77 /* ViewController.swift */,
 				0B299D2226531DF7005A2B77 /* Main.storyboard */,
+				0FA86EF6265650DD00F0D04B /* NavigationC.swift */,
+				0FA86EE82656446100F0D04B /* FeedTableViewController.swift */,
+				0F61E6BC26563F440024011D /* VCAddBook.swift */,
+				0FA86EE52656435E00F0D04B /* BookTableViewCell.swift */,
 				0F61E6AC2656337A0024011D /* VCSignUp.swift */,
 				0B299D2526531DFC005A2B77 /* Assets.xcassets */,
 				0B299D2726531DFC005A2B77 /* LaunchScreen.storyboard */,
@@ -117,6 +134,7 @@
 		0F61E6A126562CAD0024011D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				0FA86EF026564A7B00F0D04B /* Barlow-Black.ttf */,
 				0F61E6A226562CB60024011D /* hardcopi.jpeg */,
 				0F61E6A926562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png */,
 			);
@@ -205,11 +223,13 @@
 				0F61E6AA26562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png in Resources */,
 				0F272FC92654540F00FC23DB /* Barlow-Regular.ttf in Resources */,
 				0B299D46265321C9005A2B77 /* GoogleService-Info.plist in Resources */,
+				0FA86EF126564A7B00F0D04B /* Barlow-Black.ttf in Resources */,
 				0F61E6A726562E460024011D /* Comfortaa-Bold.ttf in Resources */,
 				0FD7682326545CA800244C50 /* Barlow-Light.ttf in Resources */,
+				0FA86EF426564B0700F0D04B /* Barlow-Black.ttf in Resources */,
+				0FA86EEE265648EE00F0D04B /* Barlow-Bold.ttf in Resources */,
 				0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */,
 				0F61E6A326562CB60024011D /* hardcopi.jpeg in Resources */,
-				0FD7681D26545C9D00244C50 /* Barlow-Bold.ttf in Resources */,
 				0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA86EF7265650DD00F0D04B /* NavigationC.swift in Sources */,
 				0F61E6AD2656337A0024011D /* VCSignUp.swift in Sources */,
 				0B299D2126531DF7005A2B77 /* ViewController.swift in Sources */,
 				0B299D1D26531DF7005A2B77 /* AppDelegate.swift in Sources */,
+				0FA86EE92656446100F0D04B /* FeedTableViewController.swift in Sources */,
+				0FA86EE62656435E00F0D04B /* BookTableViewCell.swift in Sources */,
+				0F61E6BD26563F440024011D /* VCAddBook.swift in Sources */,
 				0B299D1F26531DF7005A2B77 /* SceneDelegate.swift in Sources */,
 				0F61E6BA26563BD80024011D /* VCAddBooko.swift in Sources */,
 			);
@@ -288,14 +312,6 @@
 				0B299D2826531DFC005A2B77 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		0FD7681F26545C9D00244C50 /* Barlow-Bold.ttf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FD7681E26545C9D00244C50 /* Base */,
-			);
-			name = "Barlow-Bold.ttf";
 			sourceTree = "<group>";
 		};
 		0FD7682526545CA800244C50 /* Barlow-Light.ttf */ = {
@@ -432,7 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58L7HA2WXK;
+				DEVELOPMENT_TEAM = 46T93546RZ;
 				INFOPLIST_FILE = ARQUI_Hardcopi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58L7HA2WXK;
+				DEVELOPMENT_TEAM = 46T93546RZ;
 				INFOPLIST_FILE = ARQUI_Hardcopi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
