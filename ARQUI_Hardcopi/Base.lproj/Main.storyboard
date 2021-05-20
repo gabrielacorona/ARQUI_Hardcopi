@@ -9,6 +9,48 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="u3g-ge-HE0">
+            <objects>
+                <viewController id="R7S-zf-geb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t4X-cC-RnK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-UX-JDD">
+                                <rect key="frame" x="129" y="142" width="134" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create account"/>
+                                <connections>
+                                    <segue destination="4fc-3F-rI4" kind="presentation" modalPresentationStyle="fullScreen" id="jcH-RM-Ofd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1z-zp-7SD">
+                                <rect key="frame" x="163" y="203" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="add book"/>
+                                <connections>
+                                    <segue destination="wYM-nj-L9V" kind="presentation" modalPresentationStyle="fullScreen" id="qi1-hO-KaU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-YB-Uqf">
+                                <rect key="frame" x="145" y="259" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Feed de books"/>
+                                <connections>
+                                    <segue destination="cDQ-5T-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="PHy-Pi-IxB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R48-Rn-bRW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQ2-3P-Gsa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="439"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,6 +156,11 @@
                                     <segue destination="4fc-3F-rI4" kind="presentation" modalPresentationStyle="fullScreen" id="H8a-Fb-AIA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5n-zk-tOH">
+                                <rect key="frame" x="171" y="703" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Admin"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.94117647058823528" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
@@ -127,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66.153846153846146" y="86.729857819905206"/>
+            <point key="canvasLocation" x="-357" y="-280"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="fEa-3a-ZSM">
@@ -194,6 +241,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUpBtn:" destination="4fc-3F-rI4" eventType="touchUpInside" id="3da-1m-WKj"/>
+                                    <segue destination="cDQ-5T-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="Dq1-jK-mkh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdc-cO-IO0">
@@ -207,7 +255,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vLq-ls-ytx"/>
-                        <color key="backgroundColor" red="0.99607843137254903" green="0.94901960784313721" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="OiM-Y1-lwX"/>
                     <connections>
@@ -220,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8t-wA-mpR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="-397.39336492890993"/>
+            <point key="canvasLocation" x="545" y="-687"/>
         </scene>
         <!--Feed Table View Controller-->
         <scene sceneID="Gmh-Ry-Fmd">
@@ -307,7 +355,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvN-Il-SW3">
-                                            <rect key="frame" x="296" y="127" width="74" height="30"/>
+                                            <rect key="frame" x="283" y="127" width="74" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.97627419230000001" green="0.53807693720000005" blue="0.62131875749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
@@ -321,6 +369,16 @@
                                                 </attributedString>
                                             </state>
                                         </button>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gb8-jb-oYL">
+                                            <rect key="frame" x="0.0" y="0.0" width="16" height="222"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPF-b6-daz">
+                                            <rect key="frame" x="374" y="-5" width="16" height="208"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
@@ -342,7 +400,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDR-iZ-6Kn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733.8461538461538" y="-404.50236966824644"/>
+            <point key="canvasLocation" x="2486" y="-584"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eBV-kO-qdA">
@@ -474,9 +532,11 @@
             <objects>
                 <navigationController title="BookFeed" automaticallyAdjustsScrollViewInsets="NO" id="cDQ-5T-K5h" customClass="NavigationC" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="YMo-60-dLT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VD3-ML-l8S">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -486,9 +546,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ni4-xZ-FKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804.6153846153845" y="-404.50236966824644"/>
+            <point key="canvasLocation" x="1548" y="-584"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dq1-jK-mkh"/>
+        <segue reference="qi1-hO-KaU"/>
+        <segue reference="jcH-RM-Ofd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2021-05-19 at 22.43.42.png" width="293" height="576"/>
         <systemColor name="systemBackgroundColor">

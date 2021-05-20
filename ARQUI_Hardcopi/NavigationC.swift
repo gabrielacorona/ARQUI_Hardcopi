@@ -10,9 +10,11 @@ import UIKit
 class NavigationC: UINavigationController {
 
     @IBOutlet weak var navBar: UINavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "hola"
+        navBar.topItem?.title = "Nearby Books"
+        navBar.backgroundColor = UIColor(red: 254, green: 244, blue: 233, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
