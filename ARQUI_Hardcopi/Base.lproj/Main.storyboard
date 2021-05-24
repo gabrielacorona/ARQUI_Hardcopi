@@ -315,12 +315,13 @@
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9B-gX-4jc">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9B-gX-4jc">
                                             <rect key="frame" x="162" y="54" width="215" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <attributedString key="attributedText">
-                                                <fragment content="ksfdisjfaijdfiasnfadskmfa">
+                                                <fragment content="ksfdisjfaijdfiasnfadskmfksfdisjfaijdfiasnfadskmfksfdisjfaijdfiasnfadskmfksfdisjfaijdfiasnfadskmfksfdisjfaijdfiasnfadskmf">
                                                     <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                         <font key="NSFont" size="14" name="Barlow-Regular"/>
                                                     </attributes>
                                                 </fragment>
@@ -555,7 +556,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dq1-jK-mkh"/>
+        <segue reference="PHy-Pi-IxB"/>
         <segue reference="qi1-hO-KaU"/>
         <segue reference="jcH-RM-Ofd"/>
     </inferredMetricsTieBreakers>

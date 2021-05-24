@@ -22,6 +22,10 @@ class FeedTableViewController: UITableViewController {
         Book(title: "Dos", name: "Vale Obregon", body: "AFMKAMDFKM"),
         Book(title: "Tres", name: "Lucia Obregon", body: "AFMKAMDFKM"),
     ]
+    
+    // TODO que se busquen
+    
+    let volumeIds : [String] = []
 
 
     override func viewDidLoad() {

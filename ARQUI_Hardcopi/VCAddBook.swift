@@ -10,15 +10,23 @@ import GoogleBooksApiClient
 
 class VCAddBook: UIViewController {
     
+
     @IBOutlet weak var titleTxt: UITextField!
     @IBOutlet weak var authorTxt: UITextField!
     @IBOutlet weak var genreTxt: UITextField!
     @IBOutlet weak var conditionsTxt: UITextField!
     let client = GoogleBooksApiClient(session: URLSession.shared)
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let req = GoogleBooksApi.VolumeRequest.List(query: "Google")
+        let task: URLSessionDataTask = client.invoke(
+            req,
+            onSuccess: { volumes in NSLog("\(volumes)") },
+            onError: { error in NSLog("\(error)") }
+        )
+        task.resume()
 
         // Do any additional setup after loading the view.
         
@@ -58,6 +66,7 @@ class VCAddBook: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+
     func onSuccess(volumeResults: Volumes) {
         
         let bookInfo = volumeResults.items[0].volumeInfo
@@ -85,7 +94,6 @@ class VCAddBook: UIViewController {
         print("Genero(s): " + bookGenre)
         print("Descripcion: " + bookDesc)
         print("Idioma: " + bookLang)
-        
         
     }
         
