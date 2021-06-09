@@ -45,6 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="R48-Rn-bRW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8Lu-Gw-Psx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ2-3P-Gsa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,6 +161,9 @@
                                 <rect key="frame" x="171" y="703" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Admin"/>
+                                <connections>
+                                    <segue destination="R7S-zf-geb" kind="presentation" modalPresentationStyle="fullScreen" id="wIN-ls-JfY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -510,7 +514,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pzx-1X-BJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="860" y="278"/>
+            <point key="canvasLocation" x="1128" y="335"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ezb-bi-k1L">
@@ -551,8 +555,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Dq1-jK-mkh"/>
-        <segue reference="qi1-hO-KaU"/>
-        <segue reference="jcH-RM-Ofd"/>
+        <segue reference="sSf-dp-Lea"/>
+        <segue reference="H8a-Fb-AIA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2021-05-19 at 22.43.42.png" width="293" height="576"/>
