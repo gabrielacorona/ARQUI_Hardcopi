@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0568230C6EFD1CDC205CEE46 /* Pods_ARQUI_Hardcopi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993C0DA99A5DA6F4506BB33C /* Pods_ARQUI_Hardcopi.framework */; };
 		0B299D1D26531DF7005A2B77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B299D1C26531DF7005A2B77 /* AppDelegate.swift */; };
 		0B299D1F26531DF7005A2B77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B299D1E26531DF7005A2B77 /* SceneDelegate.swift */; };
 		0B299D2126531DF7005A2B77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B299D2026531DF7005A2B77 /* ViewController.swift */; };
 		0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2226531DF7005A2B77 /* Main.storyboard */; };
 		0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2526531DFC005A2B77 /* Assets.xcassets */; };
 		0B299D2926531DFC005A2B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2726531DFC005A2B77 /* LaunchScreen.storyboard */; };
-		0B299D46265321C9005A2B77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D45265321C9005A2B77 /* GoogleService-Info.plist */; };
 		0F272FB82654540F00FC23DB /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F272FA62654540E00FC23DB /* Barlow-SemiBold.ttf */; };
 		0F272FC12654540F00FC23DB /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F272FAF2654540F00FC23DB /* Barlow-Medium.ttf */; };
 		0F272FC92654540F00FC23DB /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F272FB72654540F00FC23DB /* Barlow-Regular.ttf */; };
 		0F61E6A326562CB60024011D /* hardcopi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0F61E6A226562CB60024011D /* hardcopi.jpeg */; };
-		0F61E6A726562E460024011D /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F61E6A626562E460024011D /* Comfortaa-Bold.ttf */; };
 		0F61E6AA26562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61E6A926562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png */; };
 		0F61E6AD2656337A0024011D /* VCSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61E6AC2656337A0024011D /* VCSignUp.swift */; };
 		0F61E6BA26563BD80024011D /* VCAddBooko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F61E6B926563BD80024011D /* VCAddBooko.swift */; };
@@ -30,7 +29,8 @@
 		0FA86EF426564B0700F0D04B /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */; };
 		0FA86EF7265650DD00F0D04B /* NavigationC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA86EF6265650DD00F0D04B /* NavigationC.swift */; };
 		0FD7682326545CA800244C50 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7682526545CA800244C50 /* Barlow-Light.ttf */; };
-		ABFA008CB0522274050385E5 /* Pods_ARQUI_Hardcopi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */; };
+		3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */; };
+		3CA9734F265B535D002770E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D45265321C9005A2B77 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,6 @@
 		0F272FAF2654540F00FC23DB /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
 		0F272FB72654540F00FC23DB /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
 		0F61E6A226562CB60024011D /* hardcopi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hardcopi.jpeg; sourceTree = "<group>"; };
-		0F61E6A626562E460024011D /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Bold.ttf"; path = "../../../../../../Downloads/comfortaa/Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		0F61E6A926562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2021-05-19 at 22.43.42.png"; sourceTree = "<group>"; };
 		0F61E6AC2656337A0024011D /* VCSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSignUp.swift; sourceTree = "<group>"; };
 		0F61E6B926563BD80024011D /* VCAddBooko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCAddBooko.swift; sourceTree = "<group>"; };
@@ -59,8 +58,9 @@
 		0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Barlow-Black.ttf"; path = "Assets/Barlow-Black.ttf"; sourceTree = "<group>"; };
 		0FA86EF6265650DD00F0D04B /* NavigationC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationC.swift; sourceTree = "<group>"; };
 		0FD7682426545CA800244C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Barlow-Light.ttf"; sourceTree = "<group>"; };
+		3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		993C0DA99A5DA6F4506BB33C /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.release.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.release.xcconfig"; sourceTree = "<group>"; };
-		DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBDE8619D417BE1773B54E9 /* Pods-ARQUI_Hardcopi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.debug.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABFA008CB0522274050385E5 /* Pods_ARQUI_Hardcopi.framework in Frameworks */,
+				0568230C6EFD1CDC205CEE46 /* Pods_ARQUI_Hardcopi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +97,10 @@
 		0B299D1B26531DF7005A2B77 /* ARQUI_Hardcopi */ = {
 			isa = PBXGroup;
 			children = (
+				3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */,
 				0F61E6A126562CAD0024011D /* Assets */,
-				0F61E6A626562E460024011D /* Comfortaa-Bold.ttf */,
 				0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */,
+				3CA97349265B3216002770E7 /* Comfortaa-Bold.ttf */,
 				0FA86EED265648EE00F0D04B /* Barlow-Bold.ttf */,
 				0FD7682526545CA800244C50 /* Barlow-Light.ttf */,
 				0F272FAF2654540F00FC23DB /* Barlow-Medium.ttf */,
@@ -144,7 +145,7 @@
 		5789CAB6DD4A169F80E13F91 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DAD107F0B4376AEE50F422BB /* Pods_ARQUI_Hardcopi.framework */,
+				993C0DA99A5DA6F4506BB33C /* Pods_ARQUI_Hardcopi.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,17 +220,17 @@
 			files = (
 				0F272FB82654540F00FC23DB /* Barlow-SemiBold.ttf in Resources */,
 				0B299D2926531DFC005A2B77 /* LaunchScreen.storyboard in Resources */,
+				3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */,
 				0F272FC12654540F00FC23DB /* Barlow-Medium.ttf in Resources */,
 				0F61E6AA26562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png in Resources */,
 				0F272FC92654540F00FC23DB /* Barlow-Regular.ttf in Resources */,
-				0B299D46265321C9005A2B77 /* GoogleService-Info.plist in Resources */,
 				0FA86EF126564A7B00F0D04B /* Barlow-Black.ttf in Resources */,
-				0F61E6A726562E460024011D /* Comfortaa-Bold.ttf in Resources */,
 				0FD7682326545CA800244C50 /* Barlow-Light.ttf in Resources */,
 				0FA86EF426564B0700F0D04B /* Barlow-Black.ttf in Resources */,
 				0FA86EEE265648EE00F0D04B /* Barlow-Bold.ttf in Resources */,
 				0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */,
 				0F61E6A326562CB60024011D /* hardcopi.jpeg in Resources */,
+				3CA9734F265B535D002770E7 /* GoogleService-Info.plist in Resources */,
 				0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -431,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -450,6 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46T93546RZ;
 				INFOPLIST_FILE = ARQUI_Hardcopi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46T93546RZ;
 				INFOPLIST_FILE = ARQUI_Hardcopi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
