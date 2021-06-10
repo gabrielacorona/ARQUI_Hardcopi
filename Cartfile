@@ -1,2 +1,1 @@
 github "google-books/swift-api-client"
-github "onevcat/Kingfisher" ~> 6.0
