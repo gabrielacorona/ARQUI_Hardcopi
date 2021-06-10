@@ -11,9 +11,9 @@
 		0B299D1D26531DF7005A2B77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B299D1C26531DF7005A2B77 /* AppDelegate.swift */; };
 		0B299D1F26531DF7005A2B77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B299D1E26531DF7005A2B77 /* SceneDelegate.swift */; };
 		0B299D2126531DF7005A2B77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B299D2026531DF7005A2B77 /* ViewController.swift */; };
-		0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2226531DF7005A2B77 /* Main.storyboard */; };
 		0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2526531DFC005A2B77 /* Assets.xcassets */; };
 		0B299D2926531DFC005A2B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D2726531DFC005A2B77 /* LaunchScreen.storyboard */; };
+		0F0C8D31267212BD0067BF33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C8D2F267212540067BF33 /* Main.storyboard */; };
 		0F272FB82654540F00FC23DB /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F272FA62654540E00FC23DB /* Barlow-SemiBold.ttf */; };
 		0F272FC12654540F00FC23DB /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F272FAF2654540F00FC23DB /* Barlow-Medium.ttf */; };
 		0F272FC92654540F00FC23DB /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F272FB72654540F00FC23DB /* Barlow-Regular.ttf */; };
@@ -29,13 +29,15 @@
 		0FA86EF426564B0700F0D04B /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */; };
 		0FA86EF7265650DD00F0D04B /* NavigationC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA86EF6265650DD00F0D04B /* NavigationC.swift */; };
 		0FD7682326545CA800244C50 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0FD7682526545CA800244C50 /* Barlow-Light.ttf */; };
+		0FD8A5382672066F00755021 /* TableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8A5372672066F00755021 /* TableCellController.swift */; };
+		0FD8A53B267206CC00755021 /* CellControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8A53A267206CC00755021 /* CellControllerFactory.swift */; };
+		0FD8A53F2672080100755021 /* BookTableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8A53E2672080100755021 /* BookTableCellController.swift */; };
+		0FD8A55326720F6900755021 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D45265321C9005A2B77 /* GoogleService-Info.plist */; };
 		3C91E9982671B4070011282C /* NavigationR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E9972671B4070011282C /* NavigationR.swift */; };
-		3C91E99A2671B5040011282C /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E9992671B5040011282C /* RequestTableViewController.swift */; };
 		3C91E99C2671C1850011282C /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E99B2671C1850011282C /* RequestTableViewCell.swift */; };
 		3C91E99E2671DFDA0011282C /* NavigationA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E99D2671DFDA0011282C /* NavigationA.swift */; };
 		3C91E9A02671E45D0011282C /* ReplyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */; };
 		3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */; };
-		3CA9734F265B535D002770E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D45265321C9005A2B77 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,11 +45,11 @@
 		0B299D1C26531DF7005A2B77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B299D1E26531DF7005A2B77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0B299D2026531DF7005A2B77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0B299D2326531DF7005A2B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B299D2526531DFC005A2B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B299D2826531DFC005A2B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B299D2A26531DFC005A2B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B299D45265321C9005A2B77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F0C8D2F267212540067BF33 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0F272FA62654540E00FC23DB /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-SemiBold.ttf"; sourceTree = "<group>"; };
 		0F272FAF2654540F00FC23DB /* Barlow-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Medium.ttf"; sourceTree = "<group>"; };
 		0F272FB72654540F00FC23DB /* Barlow-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Barlow-Regular.ttf"; sourceTree = "<group>"; };
@@ -63,6 +65,9 @@
 		0FA86EF326564B0700F0D04B /* Barlow-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Barlow-Black.ttf"; path = "Assets/Barlow-Black.ttf"; sourceTree = "<group>"; };
 		0FA86EF6265650DD00F0D04B /* NavigationC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationC.swift; sourceTree = "<group>"; };
 		0FD7682426545CA800244C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Barlow-Light.ttf"; sourceTree = "<group>"; };
+		0FD8A5372672066F00755021 /* TableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellController.swift; sourceTree = "<group>"; };
+		0FD8A53A267206CC00755021 /* CellControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellControllerFactory.swift; sourceTree = "<group>"; };
+		0FD8A53E2672080100755021 /* BookTableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableCellController.swift; sourceTree = "<group>"; };
 		3C91E9972671B4070011282C /* NavigationR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationR.swift; sourceTree = "<group>"; };
 		3C91E9992671B5040011282C /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		3C91E99B2671C1850011282C /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
@@ -119,7 +124,11 @@
 				0B299D1C26531DF7005A2B77 /* AppDelegate.swift */,
 				0B299D1E26531DF7005A2B77 /* SceneDelegate.swift */,
 				0B299D2026531DF7005A2B77 /* ViewController.swift */,
-				0B299D2226531DF7005A2B77 /* Main.storyboard */,
+				0F0C8D2F267212540067BF33 /* Main.storyboard */,
+				0FA86EF6265650DD00F0D04B /* NavigationC.swift */,
+				0FD8A53A267206CC00755021 /* CellControllerFactory.swift */,
+				0FD8A5372672066F00755021 /* TableCellController.swift */,
+				0FD8A53E2672080100755021 /* BookTableCellController.swift */,
 				3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */,
 				0FA86EF6265650DD00F0D04B /* NavigationC.swift */,
 				3C91E9972671B4070011282C /* NavigationR.swift */,
@@ -232,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0C8D31267212BD0067BF33 /* Main.storyboard in Resources */,
+				0FD8A55326720F6900755021 /* GoogleService-Info.plist in Resources */,
 				0F272FB82654540F00FC23DB /* Barlow-SemiBold.ttf in Resources */,
 				0B299D2926531DFC005A2B77 /* LaunchScreen.storyboard in Resources */,
 				3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */,
@@ -244,8 +255,6 @@
 				0FA86EEE265648EE00F0D04B /* Barlow-Bold.ttf in Resources */,
 				0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */,
 				0F61E6A326562CB60024011D /* hardcopi.jpeg in Resources */,
-				3CA9734F265B535D002770E7 /* GoogleService-Info.plist in Resources */,
-				0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,11 +311,14 @@
 				3C91E9982671B4070011282C /* NavigationR.swift in Sources */,
 				0FA86EF7265650DD00F0D04B /* NavigationC.swift in Sources */,
 				0F61E6AD2656337A0024011D /* VCSignUp.swift in Sources */,
+				0FD8A53B267206CC00755021 /* CellControllerFactory.swift in Sources */,
+				0FD8A5382672066F00755021 /* TableCellController.swift in Sources */,
 				3C91E9A02671E45D0011282C /* ReplyTableViewController.swift in Sources */,
 				0B299D2126531DF7005A2B77 /* ViewController.swift in Sources */,
 				3C91E99C2671C1850011282C /* RequestTableViewCell.swift in Sources */,
 				0B299D1D26531DF7005A2B77 /* AppDelegate.swift in Sources */,
 				0FA86EE92656446100F0D04B /* FeedTableViewController.swift in Sources */,
+				0FD8A53F2672080100755021 /* BookTableCellController.swift in Sources */,
 				0FA86EE62656435E00F0D04B /* BookTableViewCell.swift in Sources */,
 				0F61E6BD26563F440024011D /* VCAddBook.swift in Sources */,
 				0B299D1F26531DF7005A2B77 /* SceneDelegate.swift in Sources */,
@@ -318,14 +330,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B299D2226531DF7005A2B77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B299D2326531DF7005A2B77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0B299D2726531DFC005A2B77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

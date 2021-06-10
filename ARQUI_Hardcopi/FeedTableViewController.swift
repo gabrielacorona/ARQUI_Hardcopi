@@ -16,6 +16,8 @@ struct Book {
 class FeedTableViewController: UITableViewController {
 
     // TODO que se wrappeen las descripciones
+//    var cellControllers = [TableCellController]()
+    let cellControllerFactory = MyCellControllerFactory()
 
     let books = [
         Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."),
@@ -29,7 +31,6 @@ class FeedTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -45,16 +46,10 @@ class FeedTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookcell", for: indexPath) as! BookTableViewCell
+//        print(cellControllers)
+        return cellControllerFactory.cellControllers(item: "book").cellFromTableView(tableView, forIndexPath: indexPath)
+//        return cellControllers[indexPath.row].cellFromTableView(tableView, forIndexPath: indexPath)
         
-        let book = books[indexPath.row]
-        cell.bookTitle?.text = book.title
-        cell.authorName?.text = book.name
-        cell.bodyTxt?.text = book.body
-        
-        // Configure the cell... 
-
-        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,13 +57,12 @@ class FeedTableViewController: UITableViewController {
     }
 
 
-    /*
+
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
 
     /*
     // Override to support editing the table view.

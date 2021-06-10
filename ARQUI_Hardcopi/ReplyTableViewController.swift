@@ -7,6 +7,16 @@
 
 import UIKit
 
+
+struct Request {
+    var to: String
+    var from: String
+    var time: String
+    var status: String
+    var book: Book
+}
+
+
 class ReplyTableViewController: UITableViewController {
     
     let requests = [
