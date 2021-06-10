@@ -7,6 +7,7 @@
 
 import UIKit
 import GoogleBooksApiClient
+import SZTextView
 
 class VCAddBook: UIViewController {
     
@@ -14,11 +15,19 @@ class VCAddBook: UIViewController {
     @IBOutlet weak var titleTxt: UITextField!
     @IBOutlet weak var authorTxt: UITextField!
     @IBOutlet weak var genreTxt: UITextField!
-    @IBOutlet weak var conditionsTxt: UITextField!
+    @IBOutlet weak var descriptionTxt: SZTextView!
+    @IBOutlet weak var conditionsTxt: SZTextView!
     let client = GoogleBooksApiClient(session: URLSession.shared)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        descriptionTxt.placeholder = " Descripción*"
+        descriptionTxt.placeholderTextColor = UIColor.lightGray
+        
+        conditionsTxt.placeholder = " Condiciones*"
+        conditionsTxt.placeholderTextColor = UIColor.lightGray
+        
+        
         
         let req = GoogleBooksApi.VolumeRequest.List(query: "Google")
         let task: URLSessionDataTask = client.invoke(
@@ -96,6 +105,7 @@ class VCAddBook: UIViewController {
         print("Idioma: " + bookLang)
         
     }
+    
         
     /*
     // MARK: - Navigation
