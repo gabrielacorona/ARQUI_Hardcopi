@@ -51,6 +51,11 @@ class RequestTableViewController: UITableViewController {
         cell.authorName?.text = request.book.name
         cell.bodyTxt?.text = request.book.body
         cell.statusTxt?.text = request.status
+        if request.status == "Accepted" {
+            cell.statusTxt.textColor = UIColor.green
+        } else  {
+            cell.statusTxt.textColor = UIColor.blue
+        }
         
         // Configure the cell...
 
