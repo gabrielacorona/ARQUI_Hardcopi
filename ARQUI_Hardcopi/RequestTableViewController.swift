@@ -7,20 +7,12 @@
 
 import UIKit
 
-struct Request {
-    var to: String
-    var from: String
-    var time: String
-    var status: String
-    var book: Book
-}
-
 class RequestTableViewController: UITableViewController {
     
     let requests = [
-        Request(to: "Gaby Corona", from: "Caro Obregon", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Gaby Corona", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
-        Request(to: "Vale Obregon", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Vale Obregon", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
-        Request(to: "Arely Aceves", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Arely Aceves", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"))
+        Request(to: "1", from: "Caro Obregon", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Gaby Corona", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
+        Request(to: "2", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Vale Obregon", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
+        Request(to: "3", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Arely Aceves", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"))
     ]
     
 
@@ -66,6 +58,10 @@ class RequestTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "DetailSegue", sender: self)
     }
 
     /*
@@ -113,14 +109,22 @@ class RequestTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
+        // Get the new view controller using  segue.destination.
+        print(segue)
+        if segue.identifier == "DetailSegue" {
+            if let nextViewController = segue.destination as? NavigationD {
+                let indexRow = self.tableView.indexPathForSelectedRow
+                nextViewController.id = requests[indexRow!.row].to
+            }
+        }
         // Pass the selected object to the new view controller.
+        
     }
-    */
+
 
 }

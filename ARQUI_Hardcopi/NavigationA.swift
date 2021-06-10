@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NavigationA: UIViewController {
+class NavigationA: UINavigationController {
     
     @IBOutlet weak var navBar: UINavigationBar!
 

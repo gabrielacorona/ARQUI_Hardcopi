@@ -8,6 +8,10 @@
 import UIKit
 
 class DetailTableViewController: UITableViewController {
+    
+    let users = [Profile(id: "1", name: "Gaby Corona", email: "gaba@mail.com", phone: "8127364526"), Profile(id: "2", name: "Vale Obregon", email: "vale@mail.com", phone: "8129304526"), Profile(id: "3", name: "Arely Aceves", email: "arely@mail.com", phone: "2039474526"), Profile(id: "4", name: "Caro Obregon", email: "caro@mail.com", phone: "8738462526")]
+    
+    var id = "0"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,25 +26,20 @@ class DetailTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "bookcell", for: indexPath) as! DetailTableViewCell
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
