@@ -417,7 +417,7 @@
             <objects>
                 <viewController storyboardIdentifier="Detail" id="TNg-HG-VMj" userLabel="Request Detail" customClass="NavigationD" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z4g-xg-Cpp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="593-gM-b4g">
@@ -495,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14t-2b-NZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5544.9275362318849" y="295.98214285714283"/>
+            <point key="canvasLocation" x="5301" y="307"/>
         </scene>
         <!--Detail Table View Controller-->
         <scene sceneID="82f-31-eC4">
@@ -867,7 +867,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeN-lK-KQ9">
-                                            <rect key="frame" x="269" y="9" width="121" height="21"/>
+                                            <rect key="frame" x="256" y="19" width="121" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" red="0.3827589897" green="0.58754280820000004" blue="0.95456977740000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -895,6 +895,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="0I3-tZ-hYd"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="TNg-HG-VMj" kind="showDetail" identifier="DetailSegue" id="f8b-S0-guG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RZ-al-M7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

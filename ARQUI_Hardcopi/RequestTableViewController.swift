@@ -61,7 +61,10 @@ class RequestTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "DetailSegue", sender: self)
+        if requests[self.tableView.indexPathForSelectedRow!.row].status == "Accepted" {
+            performSegue(withIdentifier: "DetailSegue", sender: self)
+
+        }
     }
 
     /*

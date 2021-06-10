@@ -15,14 +15,26 @@ class NavigationD: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var email: UILabel!
-    var id = "0"
+    var id: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.topItem?.title = "Contact Card"
         navBar.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
-
+        if let  profile = searchProfile(id: self.id) {
+            self.name.text = profile.name
+            self.phone.text = profile.phone
+            self.email.text = profile.email
+        }
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func searchProfile(id: String?) -> Profile? {
+        if let idProfile = Int(id!) {
+            return users[idProfile - 1]
+        }
+        return nil
     }
     
 
