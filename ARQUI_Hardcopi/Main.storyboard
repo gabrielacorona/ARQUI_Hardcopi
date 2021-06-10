@@ -44,10 +44,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R48-Rn-bRW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8Lu-Gw-Psx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ2-3P-Gsa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-265" y="439"/>
+            <point key="canvasLocation" x="-867" y="565"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -159,6 +160,9 @@
                                 <rect key="frame" x="171" y="703" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Admin"/>
+                                <connections>
+                                    <segue destination="R7S-zf-geb" kind="presentation" modalPresentationStyle="fullScreen" id="wIN-ls-JfY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9882352941176471" green="0.94117647058823528" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-357" y="-280"/>
+            <point key="canvasLocation" x="-386" y="-354"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="fEa-3a-ZSM">
@@ -267,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8t-wA-mpR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="-687"/>
+            <point key="canvasLocation" x="535" y="-669"/>
         </scene>
         <!--Feed Table View Controller-->
         <scene sceneID="Gmh-Ry-Fmd">
@@ -278,7 +282,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookcell" rowHeight="177" id="0dh-cp-8Zc" customClass="BookTableViewCell" customModule="ARQUI_Hardcopi" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="book" rowHeight="177" id="0dh-cp-8Zc" customClass="BookTableViewCell" customModule="ARQUI_Hardcopi">
                                 <rect key="frame" x="0.0" y="28" width="414" height="177"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0dh-cp-8Zc" id="l4T-86-96f">
@@ -374,7 +378,7 @@
                                             <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPF-b6-daz">
-                                            <rect key="frame" x="398" y="0.0" width="16" height="208"/>
+                                            <rect key="frame" x="398" y="-16" width="16" height="208"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </view>
@@ -491,7 +495,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14t-2b-NZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4634.7826086956529" y="295.98214285714283"/>
+            <point key="canvasLocation" x="5544.9275362318849" y="295.98214285714283"/>
         </scene>
         <!--Detail Table View Controller-->
         <scene sceneID="82f-31-eC4">
@@ -598,7 +602,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jv-7E-fLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5239" y="910"/>
+            <point key="canvasLocation" x="6147.826086956522" y="909.375"/>
         </scene>
         <!--Add Book-->
         <scene sceneID="lRE-Ku-gWj">
@@ -705,7 +709,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addBook:" destination="wYM-nj-L9V" eventType="touchUpInside" id="TXb-mT-BRT"/>
-                                    <segue destination="Kd4-pg-NFS" kind="presentation" id="0OG-vO-KvN"/>
+                                    <segue destination="DG1-eF-PQ1" kind="presentation" id="aBX-6G-qbb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -762,27 +766,139 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ni4-xZ-FKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="-584"/>
+            <point key="canvasLocation" x="1433" y="-467"/>
         </scene>
-        <!--RequestFeed-->
-        <scene sceneID="BQv-7y-RRw">
+        <!--Request Table View Controller-->
+        <scene sceneID="PRM-NH-epR">
             <objects>
-                <navigationController title="BookFeed" automaticallyAdjustsScrollViewInsets="NO" id="Kd4-pg-NFS" userLabel="RequestFeed" customClass="NavigationR" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="m5c-80-Ljq" customClass="RequestTableViewController" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9RD-Qh-D8a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookcell" rowHeight="177" id="Y56-h0-a35" customClass="RequestTableViewCell" customModule="ARQUI_Hardcopi" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="177"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y56-h0-a35" id="yCP-sb-fH5">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="177"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vjg-NE-3Hk">
+                                            <rect key="frame" x="29" y="12" width="107" height="107"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ids-kV-Oih">
+                                            <rect key="frame" x="162" y="38" width="215" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Title of Book">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.18823529411764706" green="0.34901960784313724" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="15" name="Barlow-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-Ir-cQ4">
+                                            <rect key="frame" x="162" y="59" width="186" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Name LastName">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="Barlow-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLm-Om-87I">
+                                            <rect key="frame" x="162" y="79" width="215" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="ksfdisjfaijdfiasnfadskmfa">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="Barlow-Regular"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edz-Va-uQp">
+                                            <rect key="frame" x="162" y="105" width="192" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Label">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.45098039215686275" green="0.74117647058823533" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="12" name="Barlow-Medium"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idT-CJ-DqS">
+                                            <rect key="frame" x="78" y="137" width="270" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="User Name">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.05811493843793869" green="0.043867990374565125" blue="0.018728334456682205" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="14" name="Barlow-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vbg-l1-aZp">
+                                            <rect key="frame" x="0.0" y="0.0" width="16" height="222"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZ3-BP-UKv">
+                                            <rect key="frame" x="398" y="-9" width="16" height="208"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhr-c9-9Nt">
+                                            <rect key="frame" x="29" y="125" width="41" height="41"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeN-lK-KQ9">
+                                            <rect key="frame" x="269" y="9" width="121" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.3827589897" green="0.58754280820000004" blue="0.95456977740000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorName" destination="0Fc-Ir-cQ4" id="Urz-qy-o2d"/>
+                                    <outlet property="bodyTxt" destination="QLm-Om-87I" id="bTc-PI-gSt"/>
+                                    <outlet property="bookCover" destination="Vjg-NE-3Hk" id="jYt-mh-OzI"/>
+                                    <outlet property="bookTitle" destination="Ids-kV-Oih" id="7sK-t7-xdl"/>
+                                    <outlet property="genre" destination="edz-Va-uQp" id="Y4n-Hz-R51"/>
+                                    <outlet property="nameTxt" destination="idT-CJ-DqS" id="zZS-39-pDD"/>
+                                    <outlet property="statusTxt" destination="qeN-lK-KQ9" id="wKW-me-8QD"/>
+                                    <outlet property="userImage" destination="yhr-c9-9Nt" id="SLm-J2-Rhz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="m5c-80-Ljq" id="VuR-EB-PWb"/>
+                            <outlet property="delegate" destination="m5c-80-Ljq" id="Ubz-JM-wZy"/>
+                        </connections>
+                    </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="X7j-mX-FFz"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Csk-cB-cxE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <outlet property="navBar" destination="Csk-cB-cxE" id="F0h-qA-Tw3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vnI-Ow-ET3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                    <navigationItem key="navigationItem" id="0I3-tZ-hYd"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RZ-al-M7x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2667" y="138"/>
+            <point key="canvasLocation" x="4360.8695652173919" y="295.98214285714283"/>
         </scene>
         <!--RequestFeed-->
         <scene sceneID="xmM-xL-Ihk">
@@ -804,11 +920,31 @@
             </objects>
             <point key="canvasLocation" x="3635" y="1238"/>
         </scene>
+        <!--RequestFeed-->
+        <scene sceneID="F5y-Kv-lbc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DG1-eF-PQ1" userLabel="RequestFeed" customClass="NavigationR" customModule="ARQUI_Hardcopi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oBi-5w-KEd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99607843139999996" green="0.95686274510000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="navBar" destination="oBi-5w-KEd" id="XI1-Dl-5jO"/>
+                        <segue destination="m5c-80-Ljq" kind="relationship" relationship="rootViewController" id="6Oc-cX-8Fs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBO-Uc-eR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3450.7246376811595" y="295.98214285714283"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dq1-jK-mkh"/>
-        <segue reference="sSf-dp-Lea"/>
-        <segue reference="H8a-Fb-AIA"/>
+        <segue reference="PHy-Pi-IxB"/>
+        <segue reference="qi1-hO-KaU"/>
+        <segue reference="jcH-RM-Ofd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2021-05-19 at 22.43.42.png" width="293" height="576"/>

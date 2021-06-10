@@ -32,13 +32,6 @@ class DetailTableViewController: UITableViewController {
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookcell", for: indexPath) as! DetailTableViewCell
-
-        // Configure the cell...
-
-        return cell
-    }
     
 
     /*
