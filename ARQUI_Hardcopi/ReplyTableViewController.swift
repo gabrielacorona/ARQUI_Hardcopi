@@ -1,31 +1,19 @@
 //
-//  FeedTableViewController.swift
+//  ReplyTableViewController.swift
 //  ARQUI_Hardcopi
 //
-//  Created by Caro Obregon on 20/05/21.
+//  Created by Arturo Aceves Pérez on 10/06/21.
 //
 
 import UIKit
 
-struct Book {
-    var title: String
-    var name: String
-    var body: String
-}
-
-class FeedTableViewController: UITableViewController {
-
-    // TODO que se wrappeen las descripciones
-
-    let books = [
-        Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."),
-        Book(title: "Dos", name: "Vale Obregon", body: "AFMKAMDFKM"),
-        Book(title: "Tres", name: "Lucia Obregon", body: "AFMKAMDFKM"),
+class ReplyTableViewController: UITableViewController {
+    
+    let requests = [
+        Request(to: "Lucia Obregon", from: "Gaby Corona", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Lucia Obregon", from: "Vale Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Lucia Obregon", from: "ArelyAceves", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."))
     ]
-    
-    // TODO que se busquen
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,28 +27,25 @@ class FeedTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return books.count
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookcell", for: indexPath) as! BookTableViewCell
-        
-        let book = books[indexPath.row]
-        cell.bookTitle?.text = book.title
-        cell.authorName?.text = book.name
-        cell.bodyTxt?.text = book.body
-        
-        // Configure the cell... 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
 
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
-    }
-
+    */
 
     /*
     // Override to support conditional editing of the table view.

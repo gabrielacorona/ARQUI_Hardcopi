@@ -19,6 +19,7 @@ class VCAddBook: UIViewController {
     @IBOutlet weak var idiomaTxt: UITextField!
     @IBOutlet weak var conditionsTxt: SZTextView!
     @IBOutlet weak var descriptionTxt: SZTextView!
+    @IBOutlet weak var postBtn: UIButton!
     let client = GoogleBooksApiClient(session: URLSession.shared)
     
     override func viewDidLoad() {
@@ -104,6 +105,17 @@ class VCAddBook: UIViewController {
         print("Descripcion: " + bookDesc)
         print("Idioma: " + bookLang)
         
+    }
+    
+    @IBAction func addBook(_ sender: Any) {
+        
+        print("Titulo: " + (self.titleTxt.text ?? "Empty"))
+        print("Autor(es): " + (self.authorTxt.text ?? "Empty"))
+        print("Genero(s): " + (self.genreTxt.text ?? "Empty"))
+        print("Descripcion: " + (self.idiomaTxt.text ?? "Empty"))
+        print("Idioma: " + (self.descriptionTxt.text ?? "Empty"))
+        print("Descripción: " + (self.descriptionTxt.text ?? "Empty"))
+        print("COndiciones: " + (self.conditionsTxt.text ?? "Empty"))
     }
         
     /*
