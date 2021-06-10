@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-UX-JDD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-UX-JDD">
                                 <rect key="frame" x="129" y="142" width="134" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -24,7 +26,7 @@
                                     <segue destination="4fc-3F-rI4" kind="presentation" modalPresentationStyle="fullScreen" id="jcH-RM-Ofd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1z-zp-7SD">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1z-zp-7SD">
                                 <rect key="frame" x="163" y="203" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="add book"/>
@@ -32,7 +34,7 @@
                                     <segue destination="wYM-nj-L9V" kind="presentation" modalPresentationStyle="fullScreen" id="qi1-hO-KaU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-YB-Uqf">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-YB-Uqf">
                                 <rect key="frame" x="145" y="259" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Feed de books"/>
@@ -41,8 +43,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R48-Rn-bRW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Lu-Gw-Psx"/>
                 </viewController>
@@ -84,7 +86,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr9-FZ-qQ9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vr9-FZ-qQ9">
                                 <rect key="frame" x="164" y="425" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -121,7 +123,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGj-Tt-PFY">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGj-Tt-PFY">
                                 <rect key="frame" x="38.333333333333329" y="543" width="311" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.39671568629999998" blue="0.51002726720000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -136,10 +138,10 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="wYM-nj-L9V" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sSf-dp-Lea"/>
+                                    <segue destination="39x-g3-Zew" kind="presentation" modalPresentationStyle="fullScreen" id="NBX-za-B00"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-ch-Eyw">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-ch-Eyw">
                                 <rect key="frame" x="116" y="614" width="158" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
@@ -156,7 +158,7 @@
                                     <segue destination="4fc-3F-rI4" kind="presentation" modalPresentationStyle="fullScreen" id="H8a-Fb-AIA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5n-zk-tOH">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5n-zk-tOH">
                                 <rect key="frame" x="171" y="703" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Admin"/>
@@ -165,8 +167,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.9882352941176471" green="0.94117647058823528" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.94117647058823528" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="0n3-Ni-DIr"/>
                     <connections>
@@ -177,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386" y="-354"/>
+            <point key="canvasLocation" x="-1035" y="-354"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="fEa-3a-ZSM">
@@ -228,7 +230,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4zA-If-t1v">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4zA-If-t1v">
                                 <rect key="frame" x="40" y="521" width="310.99999999999989" height="48.00000000000005"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.39671568629999998" blue="0.51002726720000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -247,7 +249,7 @@
                                     <segue destination="cDQ-5T-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="Dq1-jK-mkh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdc-cO-IO0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdc-cO-IO0">
                                 <rect key="frame" x="39.333333333333329" y="61" width="10" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
@@ -257,8 +259,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vLq-ls-ytx"/>
+                        <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="OiM-Y1-lwX"/>
                     <connections>
@@ -280,7 +282,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BMS-r6-pA0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="book" rowHeight="177" id="0dh-cp-8Zc" customClass="BookTableViewCell" customModule="ARQUI_Hardcopi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="177"/>
@@ -357,7 +359,7 @@
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvN-Il-SW3">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvN-Il-SW3">
                                             <rect key="frame" x="283" y="127" width="74" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.97627419230000001" green="0.53807693720000005" blue="0.62131875749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -398,12 +400,14 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="pPl-Hr-oNV"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="pPl-Hr-oNV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="wWg-rC-Xhs"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDR-iZ-6Kn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486" y="-584"/>
+            <point key="canvasLocation" x="2485.507246376812" y="-584.59821428571422"/>
         </scene>
         <!--NavigationA-->
         <scene sceneID="eBV-kO-qdA">
@@ -424,7 +428,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EVx-D0-ARd">
                                 <rect key="frame" x="43" y="151" width="316" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="173" id="Hb2-n3-Hm7">
                                         <rect key="frame" x="0.0" y="28" width="316" height="173"/>
@@ -468,7 +472,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4SZ-ld-ME0">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4SZ-ld-ME0">
                                                     <rect key="frame" x="55" y="92" width="74" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.97627419230000001" green="0.53807693720000005" blue="0.62131875749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -484,7 +488,7 @@
                                                         </attributedString>
                                                     </state>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-WM-p0f">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Irj-WM-p0f">
                                                     <rect key="frame" x="192" y="92" width="74" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.47767295901355505" green="0.88310993020304562" blue="0.43174977228973871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -506,9 +510,10 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="EEZ-HC-BOB"/>
+                        <color key="backgroundColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9M7-N7-Laj"/>
                     <connections>
                         <outlet property="navBar" destination="GEH-7V-Nub" id="DIg-1w-MVA"/>
                     </connections>
@@ -516,6 +521,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14t-2b-NZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3510.144927536232" y="-405.80357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YJj-65-8Kz">
+            <objects>
+                <viewController id="39x-g3-Zew" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cBG-Pv-Whe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whb-cc-xeg">
+                                <rect key="frame" x="154" y="99" width="106" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="MENU">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Barlow-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcf-b1-ozP">
+                                <rect key="frame" x="56" y="194" width="302" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96861499549999996" green="0.49288886790000003" blue="0.58038717510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add Book">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Barlow-SemiBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="wYM-nj-L9V" kind="presentation" modalPresentationStyle="fullScreen" id="iWZ-W3-Rc7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7N-GB-dZW">
+                                <rect key="frame" x="56" y="296" width="302" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96861499549999996" green="0.49288886790000003" blue="0.58038717510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Available Books">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Barlow-SemiBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="cDQ-5T-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="Hy2-J7-lVo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3w-dB-Fgh">
+                                <rect key="frame" x="56" y="410" width="302" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96861499549999996" green="0.49288886790000003" blue="0.58038717510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="My Requests">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Barlow-SemiBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="TNg-HG-VMj" kind="presentation" modalPresentationStyle="fullScreen" id="wTK-kC-O4u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="utE-qo-4vn">
+                                <rect key="frame" x="56" y="517" width="302" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96861499549999996" green="0.49288886790000003" blue="0.58038717510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99999719860000003" green="0.9999815822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Requests I've sent">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Barlow-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="Kd4-pg-NFS" kind="presentation" modalPresentationStyle="fullScreen" id="E2i-z9-ZB5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qFI-Ji-IW2"/>
+                        <color key="backgroundColor" red="0.99489539859999998" green="0.94980210070000004" blue="0.90195316079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lzb-2s-AOa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZ9-Kg-C2I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="857.8125"/>
         </scene>
         <!--Add Book-->
         <scene sceneID="lRE-Ku-gWj">
@@ -577,17 +684,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f5-EJ-Zcx">
-                                <rect key="frame" x="39" y="61" width="10" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8f5-EJ-Zcx">
+                                <rect key="frame" x="20" y="61" width="29" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <segue destination="39x-g3-Zew" kind="presentation" modalPresentationStyle="fullScreen" id="cbQ-o4-iRS"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lCw-8U-6WS" customClass="SZTextView">
                                 <rect key="frame" x="39" y="577" width="311" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -597,15 +707,15 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vex-s4-wYb" customClass="SZTextView">
                                 <rect key="frame" x="39" y="661" width="311" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value=" Condiciones*"/>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrF-z2-tFQ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrF-z2-tFQ">
                                 <rect key="frame" x="38" y="746" width="310.99999999999989" height="48.00000000000005"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.39671568629999998" blue="0.51002726720000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -622,12 +732,12 @@
                                 </state>
                                 <connections>
                                     <action selector="addBook:" destination="wYM-nj-L9V" eventType="touchUpInside" id="TXb-mT-BRT"/>
-                                    <segue destination="Kd4-pg-NFS" kind="presentation" id="0OG-vO-KvN"/>
+                                    <segue destination="39x-g3-Zew" kind="presentation" modalPresentationStyle="fullScreen" id="FEb-uR-Nd1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843139999996" green="0.94901960780000005" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kkI-FF-EPe"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.94901960780000005" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="oTu-b2-AOZ"/>
                     <connections>
@@ -643,7 +753,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pzx-1X-BJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="859.4202898550725" y="277.90178571428572"/>
+            <point key="canvasLocation" x="1113.0434782608697" y="201.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ezb-bi-k1L">
@@ -652,8 +762,8 @@
                     <view key="view" contentMode="scaleToFill" id="LAM-5c-q4T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vcL-kv-xZR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kk4-tn-jbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -665,7 +775,9 @@
             <objects>
                 <navigationController title="BookFeed" automaticallyAdjustsScrollViewInsets="NO" id="cDQ-5T-K5h" customClass="NavigationC" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="YMo-60-dLT"/>
+                    <navigationItem key="navigationItem" title="Titulo" leftItemsSupplementBackButton="YES" id="YMo-60-dLT">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qdz-mT-BOe"/>
+                    </navigationItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VD3-ML-l8S">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -679,16 +791,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ni4-xZ-FKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433" y="-467"/>
+            <point key="canvasLocation" x="1457" y="-494"/>
         </scene>
         <!--Request Table View Controller-->
         <scene sceneID="PRM-NH-epR">
             <objects>
                 <tableViewController id="m5c-80-Ljq" customClass="RequestTableViewController" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9RD-Qh-D8a">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookcell" rowHeight="177" id="Y56-h0-a35" customClass="RequestTableViewCell" customModule="ARQUI_Hardcopi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="177"/>
@@ -813,7 +925,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="X7j-mX-FFz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Csk-cB-cxE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -829,11 +941,18 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PHy-Pi-IxB"/>
-        <segue reference="qi1-hO-KaU"/>
-        <segue reference="jcH-RM-Ofd"/>
+        <segue reference="Hy2-J7-lVo"/>
+        <segue reference="iWZ-W3-Rc7"/>
+        <segue reference="NBX-za-B00"/>
+        <segue reference="H8a-Fb-AIA"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2021-05-19 at 22.43.42.png" width="293" height="576"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
