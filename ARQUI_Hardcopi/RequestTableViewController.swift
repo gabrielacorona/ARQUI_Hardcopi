@@ -9,17 +9,14 @@ import UIKit
 
 class RequestTableViewController: UITableViewController {
     
-    let requests = [
-        Request(to: "1", from: "Caro Obregon", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Gaby Corona", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
-        Request(to: "2", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Vale Obregon", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
-        Request(to: "3", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Arely Aceves", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"))
-    ]
-    
-
+    let cellControllerFactory = MyCellControllerFactory()
+    var tableCellController: TableCellController? = nil
+    var to: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
+        self.tableCellController = cellControllerFactory.cellControllers(item: "request")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,26 +29,11 @@ class RequestTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return requests.count
+        return self.tableCellController!.countFromtableView(tableView, numberOfRowsInSection: section)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookcell", for: indexPath) as! RequestTableViewCell
-        
-        let request = requests[indexPath.row]
-        cell.bookTitle?.text = request.book.title
-        cell.authorName?.text = request.book.author
-        cell.bodyTxt?.text = request.book.body
-        cell.statusTxt?.text = request.status
-        cell.genre?.text = request.book.genre
-        cell.nameTxt?.text = request.book.name
-        cell.bookCover.sd_setImage(with: URL(string: (request.book.cover ?? "http://www.domain.com/path/to/image.jpg")), placeholderImage: UIImage(named: "HardcopiLogo.png"))
-        cell.userImage.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "UserImage.png"))
-        cell.userImage.makeRounded()
-        if request.status == "Accepted" {
-            cell.statusTxt.textColor = UIColor(red: 122/256, green: 225/256, blue: 110/256, alpha: 1)        }
-        
-        // Configure the cell...
+        let cell = self.tableCellController!.cellFromTableView(tableView, forIndexPath: indexPath)
 
         return cell
     }
@@ -61,7 +43,8 @@ class RequestTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if requests[self.tableView.indexPathForSelectedRow!.row].status == "Accepted" {
+        if let user = self.tableCellController!.segueFromTableView(tableView,selectedRow: self.tableView.indexPathForSelectedRow!.row) {
+            self.to = user as? String
             performSegue(withIdentifier: "DetailSegue", sender: self)
 
         }
@@ -121,8 +104,7 @@ class RequestTableViewController: UITableViewController {
         print(segue)
         if segue.identifier == "DetailSegue" {
             if let nextViewController = segue.destination as? NavigationD {
-                let indexRow = self.tableView.indexPathForSelectedRow
-                nextViewController.id = requests[indexRow!.row].to
+                nextViewController.id = self.to!
             }
         }
         // Pass the selected object to the new view controller.

@@ -44,6 +44,8 @@
 		3C9C0033267297BE001561F2 /* UIImage+makeRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C0032267297BE001561F2 /* UIImage+makeRounded.swift */; };
 		3C9C003526729811001561F2 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C003426729811001561F2 /* DetailTableViewController.swift */; };
 		3C9C003726729A1B001561F2 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C003626729A1B001561F2 /* RequestTableViewController.swift */; };
+		3C9C00392672A9D5001561F2 /* HardcopiLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C00382672A9D5001561F2 /* HardcopiLogo.png */; };
+		3C9C003B2672AA76001561F2 /* RequestTableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C003A2672AA76001561F2 /* RequestTableCellController.swift */; };
 		3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -81,13 +83,14 @@
 		3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTableViewController.swift; sourceTree = "<group>"; };
 		3C91E9A3267230E80011282C /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		3C91E9A52672310C0011282C /* NavigationD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationD.swift; sourceTree = "<group>"; };
-		3C91E9AB267248570011282C /* HardcopiLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HardcopiLogo.png; sourceTree = "<group>"; };
 		3C91E9AF2672492C0011282C /* UserImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserImage.png; sourceTree = "<group>"; };
 		3C91E9B126725FFD0011282C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		3C91E9B32672600D0011282C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		3C9C0032267297BE001561F2 /* UIImage+makeRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+makeRounded.swift"; sourceTree = "<group>"; };
 		3C9C003426729811001561F2 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		3C9C003626729A1B001561F2 /* RequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
+		3C9C00382672A9D5001561F2 /* HardcopiLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HardcopiLogo.png; sourceTree = "<group>"; };
+		3C9C003A2672AA76001561F2 /* RequestTableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableCellController.swift; sourceTree = "<group>"; };
 		3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		993C0DA99A5DA6F4506BB33C /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.release.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,8 +131,6 @@
 		0B299D1B26531DF7005A2B77 /* ARQUI_Hardcopi */ = {
 			isa = PBXGroup;
 			children = (
-				3C9C003626729A1B001561F2 /* RequestTableViewController.swift */,
-				3C9C003426729811001561F2 /* DetailTableViewController.swift */,
 				3C9C0032267297BE001561F2 /* UIImage+makeRounded.swift */,
 				3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */,
 				0F61E6A126562CAD0024011D /* Assets */,
@@ -146,7 +147,9 @@
 				0F0C8D2F267212540067BF33 /* Main.storyboard */,
 				0FD8A53A267206CC00755021 /* CellControllerFactory.swift */,
 				0FD8A5372672066F00755021 /* TableCellController.swift */,
+				3C9C003426729811001561F2 /* DetailTableViewController.swift */,
 				0FD8A53E2672080100755021 /* BookTableCellController.swift */,
+				3C9C003A2672AA76001561F2 /* RequestTableCellController.swift */,
 				3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */,
 				0FA86EF6265650DD00F0D04B /* NavigationC.swift */,
 				3C91E9972671B4070011282C /* NavigationR.swift */,
@@ -156,6 +159,7 @@
 				3C91E9B126725FFD0011282C /* Profile.swift */,
 				3C91E9B32672600D0011282C /* Request.swift */,
 				0FA86EE82656446100F0D04B /* FeedTableViewController.swift */,
+				3C9C003626729A1B001561F2 /* RequestTableViewController.swift */,
 				0F61E6BC26563F440024011D /* VCAddBook.swift */,
 				0FA86EE52656435E00F0D04B /* BookTableViewCell.swift */,
 				3C91E99B2671C1850011282C /* RequestTableViewCell.swift */,
@@ -179,10 +183,10 @@
 		0F61E6A126562CAD0024011D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3C9C00382672A9D5001561F2 /* HardcopiLogo.png */,
 				3C91E9AF2672492C0011282C /* UserImage.png */,
 				0FA86EF026564A7B00F0D04B /* Barlow-Black.ttf */,
 				0F61E6A226562CB60024011D /* hardcopi.jpeg */,
-				3C91E9AB267248570011282C /* HardcopiLogo.png */,
 				0F61E6A926562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png */,
 			);
 			path = Assets;
@@ -285,6 +289,7 @@
 				0FA86EF426564B0700F0D04B /* Barlow-Black.ttf in Resources */,
 				0FA86EEE265648EE00F0D04B /* Barlow-Bold.ttf in Resources */,
 				0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */,
+				3C9C00392672A9D5001561F2 /* HardcopiLogo.png in Resources */,
 				0F61E6A326562CB60024011D /* hardcopi.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +356,7 @@
 				3C91E99C2671C1850011282C /* RequestTableViewCell.swift in Sources */,
 				0B299D1D26531DF7005A2B77 /* AppDelegate.swift in Sources */,
 				0FA86EE92656446100F0D04B /* FeedTableViewController.swift in Sources */,
+				3C9C003B2672AA76001561F2 /* RequestTableCellController.swift in Sources */,
 				0FD8A53F2672080100755021 /* BookTableCellController.swift in Sources */,
 				0FA86EE62656435E00F0D04B /* BookTableViewCell.swift in Sources */,
 				0F61E6BD26563F440024011D /* VCAddBook.swift in Sources */,

@@ -40,6 +40,22 @@
                                     <segue destination="cDQ-5T-K5h" kind="presentation" modalPresentationStyle="fullScreen" id="PHy-Pi-IxB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bf3-Yw-Ram">
+                                <rect key="frame" x="152" y="297" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Requests"/>
+                                <connections>
+                                    <segue destination="DG1-eF-PQ1" kind="presentation" id="hpZ-UD-L1Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxy-3J-dtd">
+                                <rect key="frame" x="130" y="335" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Current Requests"/>
+                                <connections>
+                                    <segue destination="Hb9-L2-ymg" kind="presentation" id="bfT-35-Eb1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="R48-Rn-bRW"/>
@@ -502,11 +518,11 @@
             <objects>
                 <tableViewController id="YYa-ga-bZT" customClass="DetailTableViewController" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TwH-9W-rQk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.95686274510000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="208" id="HNL-ja-E9j">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="208" id="HNL-ja-E9j" customClass="DetailTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="414" height="208"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HNL-ja-E9j" id="G8c-x3-3FS">
@@ -592,6 +608,11 @@
                                         </view>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bookTitle" destination="irp-xj-5Dw" id="HjS-Bi-bMG"/>
+                                    <outlet property="date" destination="nC3-Vt-QDq" id="nhh-ic-0Ew"/>
+                                    <outlet property="userName" destination="ckh-kf-NZp" id="VHm-XY-nVQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -599,10 +620,11 @@
                             <outlet property="delegate" destination="YYa-ga-bZT" id="QQA-98-gZz"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="J6W-zY-lfO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jv-7E-fLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6147.826086956522" y="909.375"/>
+            <point key="canvasLocation" x="4418.840579710145" y="969.64285714285711"/>
         </scene>
         <!--Add Book-->
         <scene sceneID="lRE-Ku-gWj">
@@ -709,7 +731,6 @@
                                 </state>
                                 <connections>
                                     <action selector="addBook:" destination="wYM-nj-L9V" eventType="touchUpInside" id="TXb-mT-BRT"/>
-                                    <segue destination="DG1-eF-PQ1" kind="presentation" id="aBX-6G-qbb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -775,9 +796,10 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9RD-Qh-D8a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.95686274510000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.99607843139999996" green="0.95686274510000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookcell" rowHeight="177" id="Y56-h0-a35" customClass="RequestTableViewCell" customModule="ARQUI_Hardcopi" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="request" rowHeight="177" id="Y56-h0-a35" userLabel="request" customClass="RequestTableViewCell" customModule="ARQUI_Hardcopi" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="177"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y56-h0-a35" id="yCP-sb-fH5">
@@ -904,26 +926,6 @@
             <point key="canvasLocation" x="4360.8695652173919" y="295.98214285714283"/>
         </scene>
         <!--RequestFeed-->
-        <scene sceneID="xmM-xL-Ihk">
-            <objects>
-                <navigationController title="BookFeed" automaticallyAdjustsScrollViewInsets="NO" id="aoD-hN-Ofy" userLabel="RequestFeed" customClass="NavigationA" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Zdf-Rj-w4r"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="doV-4v-LPy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.99654167890000001" green="0.95589727160000004" blue="0.91459172960000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <outlet property="navBar" destination="doV-4v-LPy" id="eSa-uz-T2b"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XC0-O6-Li8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3635" y="1238"/>
-        </scene>
-        <!--RequestFeed-->
         <scene sceneID="F5y-Kv-lbc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DG1-eF-PQ1" userLabel="RequestFeed" customClass="NavigationR" customModule="ARQUI_Hardcopi" sceneMemberID="viewController">
@@ -942,6 +944,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBO-Uc-eR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3450.7246376811595" y="295.98214285714283"/>
+        </scene>
+        <!--Current Requests-->
+        <scene sceneID="wyg-Ao-MDW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hb9-L2-ymg" userLabel="Current Requests" customClass="NavigationA" customModule="ARQUI_Hardcopi" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ai1-Tw-odA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99607843139999996" green="0.95686274510000002" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="navBar" destination="Ai1-Tw-odA" id="6o9-7d-w5U"/>
+                        <segue destination="YYa-ga-bZT" kind="relationship" relationship="rootViewController" id="Upq-ll-22N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnB-1Q-hxC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3508.6956521739135" y="969.64285714285711"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

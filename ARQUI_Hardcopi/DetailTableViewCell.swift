@@ -8,6 +8,10 @@
 import UIKit
 
 class DetailTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var bookTitle: UILabel!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var date: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

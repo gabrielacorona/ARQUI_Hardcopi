@@ -32,11 +32,12 @@ class FeedTableViewController: UITableViewController {
     
     // TODO que se busquen
     
-
+    var tableCellController: TableCellController? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
+        self.tableCellController = cellControllerFactory.cellControllers(item: "book")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,23 +49,13 @@ class FeedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return books.count
+        return self.tableCellController!.countFromtableView(tableView, numberOfRowsInSection: section)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bookcell", for: indexPath) as! BookTableViewCell
-        
-        /*let book = books[indexPath.row]
-        cell.bookTitle?.text = book.title
-        cell.authorName?.text = book.author
-        cell.bodyTxt?.text = book.body
-        cell.nameTxt?.text = book.name
-        cell.genre?.text = book.genre
-        cell.bookCover.sd_setImage(with: URL(string: (book.cover ?? "http://www.domain.com/path/to/image.jpg")), placeholderImage: UIImage(named: "HardcopiLogo.png"))
-        cell.userImage.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "UserImage.png"))
-        cell.userImage.makeRounded()*/
-//        print(cellControllers)
-        return cellControllerFactory.cellControllers(item: "book").cellFromTableView(tableView, forIndexPath: indexPath)
+        let cell = self.tableCellController!.cellFromTableView(tableView, forIndexPath: indexPath)
+
+        return cell
 //        return cellControllers[indexPath.row].cellFromTableView(tableView, forIndexPath: indexPath)
         
     }

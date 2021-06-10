@@ -14,8 +14,9 @@ class Profile: NSObject {
     var email: String
     var phone: String
     var about: String?
+    var photo: String?
     
-    init(id: String, name: String, email: String, phone: String, about: String? = nil) {
+    init(id: String, name: String, email: String, phone: String, about: String? = nil, photo: String? = nil) {
         self.id = id
         self.name = name
         self.email = email

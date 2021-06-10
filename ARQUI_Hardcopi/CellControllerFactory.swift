@@ -16,6 +16,10 @@ class MyCellControllerFactory {
             print("in book")
             return BookTableCellController(item: item)
         }
+        if item == "request" {
+            print("in request")
+            return RequestTableCellController(item: item)
+        }
         print(item)
         return BookTableCellController(item: item)
     }

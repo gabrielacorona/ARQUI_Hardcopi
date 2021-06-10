@@ -2,7 +2,7 @@
 //  RequestTableViewCell.swift
 //  ARQUI_Hardcopi
 //
-//  Created by Arturo Aceves Pérez on 09/06/21.
+//  Created by Arely Aceves on 09/06/21.
 //
 
 import UIKit
