@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import SDWebImage
 
 struct Book {
     var title: String
     var name: String
+    var author: String
+    var genre: String
     var body: String
+    var cover: String?
 }
 
 class FeedTableViewController: UITableViewController {
@@ -18,9 +22,10 @@ class FeedTableViewController: UITableViewController {
     // TODO que se wrappeen las descripciones
 
     let books = [
-        Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."),
-        Book(title: "Dos", name: "Vale Obregon", body: "AFMKAMDFKM"),
-        Book(title: "Tres", name: "Lucia Obregon", body: "AFMKAMDFKM"),
+        Book(title: "Conversations with Friends: A Novel", name: "Caro Obregon",
+             author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"),
+        Book(title: "Dos", name: "Vale Obregon", author: "Sally Rooney", genre: "Fiction", body: "AFMKAMDFKM"),
+        Book(title: "Tres", name: "Lucia Obregon",author: "Sally Rooney", genre: "Fiction", body: "AFMKAMDFKM"),
     ]
     
     // TODO que se busquen
@@ -29,7 +34,7 @@ class FeedTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -49,8 +54,13 @@ class FeedTableViewController: UITableViewController {
         
         let book = books[indexPath.row]
         cell.bookTitle?.text = book.title
-        cell.authorName?.text = book.name
+        cell.authorName?.text = book.author
         cell.bodyTxt?.text = book.body
+        cell.nameTxt?.text = book.name
+        cell.genre?.text = book.genre
+        cell.bookCover.sd_setImage(with: URL(string: (book.cover ?? "http://www.domain.com/path/to/image.jpg")), placeholderImage: UIImage(named: "HardcopiLogo.png"))
+        cell.userImage.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "UserImage.png"))
+        cell.userImage.makeRounded()
         
         // Configure the cell... 
 

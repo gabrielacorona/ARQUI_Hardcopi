@@ -14,7 +14,7 @@ class NavigationR: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navBar.topItem?.title = "My Requests"
-        navBar.backgroundColor = UIColor(red: 254, green: 244, blue: 233, alpha: 1)
+        navBar.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
         // Do any additional setup after loading the view.
     }
     

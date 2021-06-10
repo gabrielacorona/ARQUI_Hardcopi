@@ -63,11 +63,15 @@ PODS:
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SZTextView (1.3.0)
 
 DEPENDENCIES:
   - Firebase
   - GoogleBooksApiClient
+  - SDWebImage
   - SZTextView
 
 SPEC REPOS:
@@ -83,6 +87,7 @@ SPEC REPOS:
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - SDWebImage
     - SZTextView
 
 SPEC CHECKSUMS:
@@ -97,8 +102,9 @@ SPEC CHECKSUMS:
   GoogleUtilities: f734da554aade8cc7928a31c2f3311897933a1bd
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SZTextView: 094dc6acc9beec537685c545d6e3e0d4975174e1
 
-PODFILE CHECKSUM: ffb99b27c59e172018c5c54c519e0f094a94fad2
+PODFILE CHECKSUM: e664094a70888828bfc87fc2aa85f46426e62453
 
 COCOAPODS: 1.10.1

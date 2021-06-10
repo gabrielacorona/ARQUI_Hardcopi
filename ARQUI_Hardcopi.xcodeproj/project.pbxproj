@@ -37,6 +37,9 @@
 		3C91E9A2267230970011282C /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E9A1267230970011282C /* DetailTableViewController.swift */; };
 		3C91E9A4267230E80011282C /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E9A3267230E80011282C /* DetailTableViewCell.swift */; };
 		3C91E9A62672310C0011282C /* NavigationD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E9A52672310C0011282C /* NavigationD.swift */; };
+		3C91E9A8267241F30011282C /* UIImage+makeRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E9A7267241F30011282C /* UIImage+makeRounded.swift */; };
+		3C91E9AC267248580011282C /* HardcopiLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C91E9AB267248570011282C /* HardcopiLogo.png */; };
+		3C91E9B02672492C0011282C /* UserImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C91E9AF2672492C0011282C /* UserImage.png */; };
 		3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */; };
 		3CA9734F265B535D002770E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D45265321C9005A2B77 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -74,6 +77,9 @@
 		3C91E9A1267230970011282C /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		3C91E9A3267230E80011282C /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		3C91E9A52672310C0011282C /* NavigationD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationD.swift; sourceTree = "<group>"; };
+		3C91E9A7267241F30011282C /* UIImage+makeRounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+makeRounded.swift"; sourceTree = "<group>"; };
+		3C91E9AB267248570011282C /* HardcopiLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HardcopiLogo.png; sourceTree = "<group>"; };
+		3C91E9AF2672492C0011282C /* UserImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserImage.png; sourceTree = "<group>"; };
 		3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		993C0DA99A5DA6F4506BB33C /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.release.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 				0B299D1E26531DF7005A2B77 /* SceneDelegate.swift */,
 				0B299D2026531DF7005A2B77 /* ViewController.swift */,
 				0B299D2226531DF7005A2B77 /* Main.storyboard */,
+				3C91E9A7267241F30011282C /* UIImage+makeRounded.swift */,
 				3C91E9A1267230970011282C /* DetailTableViewController.swift */,
 				3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */,
 				0FA86EF6265650DD00F0D04B /* NavigationC.swift */,
@@ -158,8 +165,10 @@
 		0F61E6A126562CAD0024011D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3C91E9AF2672492C0011282C /* UserImage.png */,
 				0FA86EF026564A7B00F0D04B /* Barlow-Black.ttf */,
 				0F61E6A226562CB60024011D /* hardcopi.jpeg */,
+				3C91E9AB267248570011282C /* HardcopiLogo.png */,
 				0F61E6A926562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png */,
 			);
 			path = Assets;
@@ -243,6 +252,7 @@
 			files = (
 				0F272FB82654540F00FC23DB /* Barlow-SemiBold.ttf in Resources */,
 				0B299D2926531DFC005A2B77 /* LaunchScreen.storyboard in Resources */,
+				3C91E9B02672492C0011282C /* UserImage.png in Resources */,
 				3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */,
 				0F272FC12654540F00FC23DB /* Barlow-Medium.ttf in Resources */,
 				0F61E6AA26562EA00024011D /* Screen Shot 2021-05-19 at 22.43.42.png in Resources */,
@@ -254,6 +264,7 @@
 				0B299D2626531DFC005A2B77 /* Assets.xcassets in Resources */,
 				0F61E6A326562CB60024011D /* hardcopi.jpeg in Resources */,
 				3CA9734F265B535D002770E7 /* GoogleService-Info.plist in Resources */,
+				3C91E9AC267248580011282C /* HardcopiLogo.png in Resources */,
 				0B299D2426531DF7005A2B77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +331,7 @@
 				0FA86EE92656446100F0D04B /* FeedTableViewController.swift in Sources */,
 				3C91E9A4267230E80011282C /* DetailTableViewCell.swift in Sources */,
 				0FA86EE62656435E00F0D04B /* BookTableViewCell.swift in Sources */,
+				3C91E9A8267241F30011282C /* UIImage+makeRounded.swift in Sources */,
 				0F61E6BD26563F440024011D /* VCAddBook.swift in Sources */,
 				0B299D1F26531DF7005A2B77 /* SceneDelegate.swift in Sources */,
 				3C91E99E2671DFDA0011282C /* NavigationA.swift in Sources */,

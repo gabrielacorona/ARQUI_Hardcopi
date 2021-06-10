@@ -10,13 +10,14 @@ import UIKit
 class ReplyTableViewController: UITableViewController {
     
     let requests = [
-        Request(to: "Lucia Obregon", from: "Gaby Corona", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
-        Request(to: "Lucia Obregon", from: "Vale Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
-        Request(to: "Lucia Obregon", from: "ArelyAceves", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."))
+        Request(to: "Lucia Obregon", from: "Gaby Corona", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Caro Obregon", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Lucia Obregon", from: "Vale Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Lucia Obregon", from: "ArelyAceves", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."))
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

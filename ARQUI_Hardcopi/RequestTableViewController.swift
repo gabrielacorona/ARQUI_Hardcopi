@@ -18,16 +18,16 @@ struct Request {
 class RequestTableViewController: UITableViewController {
     
     let requests = [
-        Request(to: "Gaby Corona", from: "Lucia Obregon", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
-        Request(to: "Vale Obregon", from: "Lucia Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
-        Request(to: "Arely Aceves", from: "Lucia Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."))
+        Request(to: "Gaby Corona", from: "Caro Obregon", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Gaby Corona", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
+        Request(to: "Vale Obregon", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Vale Obregon", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")),
+        Request(to: "Arely Aceves", from: "Caro Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Arely Aceves", author: "Sally Rooney", genre: "Fiction", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.", cover: "https://books.google.com/books/content?id=4ZQnDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"))
     ]
     
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -48,9 +48,16 @@ class RequestTableViewController: UITableViewController {
         
         let request = requests[indexPath.row]
         cell.bookTitle?.text = request.book.title
-        cell.authorName?.text = request.book.name
+        cell.authorName?.text = request.book.author
         cell.bodyTxt?.text = request.book.body
         cell.statusTxt?.text = request.status
+        cell.genre?.text = request.book.genre
+        cell.nameTxt?.text = request.book.name
+        cell.bookCover.sd_setImage(with: URL(string: (request.book.cover ?? "http://www.domain.com/path/to/image.jpg")), placeholderImage: UIImage(named: "HardcopiLogo.png"))
+        cell.userImage.sd_setImage(with: URL(string: "http://www.domain.com/path/to/image.jpg"), placeholderImage: UIImage(named: "UserImage.png"))
+        cell.userImage.makeRounded()
+        if request.status == "Accepted" {
+            cell.statusTxt.textColor = UIColor(red: 122/256, green: 225/256, blue: 110/256, alpha: 1)        }
         
         // Configure the cell...
 

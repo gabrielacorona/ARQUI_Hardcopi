@@ -10,6 +10,7 @@ target 'ARQUI_Hardcopi' do
   pod 'Firebase'
   pod 'GoogleBooksApiClient'
   pod 'SZTextView'
+  pod 'SDWebImage'
 # add pods for desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
 end
