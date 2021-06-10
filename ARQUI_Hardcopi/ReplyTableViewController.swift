@@ -1,36 +1,33 @@
 //
-//  FeedTableViewController.swift
+//  ReplyTableViewController.swift
 //  ARQUI_Hardcopi
 //
-//  Created by Caro Obregon on 20/05/21.
+//  Created by Arturo Aceves Pérez on 10/06/21.
 //
 
 import UIKit
 
-struct Book {
-    var title: String
-    var name: String
-    var body: String
+
+struct Request {
+    var to: String
+    var from: String
+    var time: String
+    var status: String
+    var book: Book
 }
 
-class FeedTableViewController: UITableViewController {
 
-    // TODO que se wrappeen las descripciones
-//    var cellControllers = [TableCellController]()
-    let cellControllerFactory = MyCellControllerFactory()
-
-    let books = [
-        Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."),
-        Book(title: "Dos", name: "Vale Obregon", body: "AFMKAMDFKM"),
-        Book(title: "Tres", name: "Lucia Obregon", body: "AFMKAMDFKM"),
+class ReplyTableViewController: UITableViewController {
+    
+    let requests = [
+        Request(to: "Lucia Obregon", from: "Gaby Corona", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Lucia Obregon", from: "Vale Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Lucia Obregon", from: "ArelyAceves", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."))
     ]
-    
-    // TODO que se busquen
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,29 +37,33 @@ class FeedTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return books.count
+        return 0
     }
 
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        print(cellControllers)
-        return cellControllerFactory.cellControllers(item: "book").cellFromTableView(tableView, forIndexPath: indexPath)
-//        return cellControllers[indexPath.row].cellFromTableView(tableView, forIndexPath: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
-    }
+    */
 
-
-
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
+    */
 
     /*
     // Override to support editing the table view.

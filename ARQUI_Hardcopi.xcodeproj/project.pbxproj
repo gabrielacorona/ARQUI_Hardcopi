@@ -33,6 +33,10 @@
 		0FD8A53B267206CC00755021 /* CellControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8A53A267206CC00755021 /* CellControllerFactory.swift */; };
 		0FD8A53F2672080100755021 /* BookTableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD8A53E2672080100755021 /* BookTableCellController.swift */; };
 		0FD8A55326720F6900755021 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B299D45265321C9005A2B77 /* GoogleService-Info.plist */; };
+		3C91E9982671B4070011282C /* NavigationR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E9972671B4070011282C /* NavigationR.swift */; };
+		3C91E99C2671C1850011282C /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E99B2671C1850011282C /* RequestTableViewCell.swift */; };
+		3C91E99E2671DFDA0011282C /* NavigationA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E99D2671DFDA0011282C /* NavigationA.swift */; };
+		3C91E9A02671E45D0011282C /* ReplyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */; };
 		3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +68,11 @@
 		0FD8A5372672066F00755021 /* TableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellController.swift; sourceTree = "<group>"; };
 		0FD8A53A267206CC00755021 /* CellControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellControllerFactory.swift; sourceTree = "<group>"; };
 		0FD8A53E2672080100755021 /* BookTableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableCellController.swift; sourceTree = "<group>"; };
+		3C91E9972671B4070011282C /* NavigationR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationR.swift; sourceTree = "<group>"; };
+		3C91E9992671B5040011282C /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
+		3C91E99B2671C1850011282C /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		3C91E99D2671DFDA0011282C /* NavigationA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationA.swift; sourceTree = "<group>"; };
+		3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTableViewController.swift; sourceTree = "<group>"; };
 		3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		993C0DA99A5DA6F4506BB33C /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.release.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,9 +129,15 @@
 				0FD8A53A267206CC00755021 /* CellControllerFactory.swift */,
 				0FD8A5372672066F00755021 /* TableCellController.swift */,
 				0FD8A53E2672080100755021 /* BookTableCellController.swift */,
+				3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */,
+				0FA86EF6265650DD00F0D04B /* NavigationC.swift */,
+				3C91E9972671B4070011282C /* NavigationR.swift */,
+				3C91E99D2671DFDA0011282C /* NavigationA.swift */,
 				0FA86EE82656446100F0D04B /* FeedTableViewController.swift */,
+				3C91E9992671B5040011282C /* RequestTableViewController.swift */,
 				0F61E6BC26563F440024011D /* VCAddBook.swift */,
 				0FA86EE52656435E00F0D04B /* BookTableViewCell.swift */,
+				3C91E99B2671C1850011282C /* RequestTableViewCell.swift */,
 				0F61E6AC2656337A0024011D /* VCSignUp.swift */,
 				0B299D2526531DFC005A2B77 /* Assets.xcassets */,
 				0B299D2726531DFC005A2B77 /* LaunchScreen.storyboard */,
@@ -292,17 +307,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C91E99A2671B5040011282C /* RequestTableViewController.swift in Sources */,
+				3C91E9982671B4070011282C /* NavigationR.swift in Sources */,
 				0FA86EF7265650DD00F0D04B /* NavigationC.swift in Sources */,
 				0F61E6AD2656337A0024011D /* VCSignUp.swift in Sources */,
 				0FD8A53B267206CC00755021 /* CellControllerFactory.swift in Sources */,
-				0B299D2126531DF7005A2B77 /* ViewController.swift in Sources */,
 				0FD8A5382672066F00755021 /* TableCellController.swift in Sources */,
+				3C91E9A02671E45D0011282C /* ReplyTableViewController.swift in Sources */,
+				0B299D2126531DF7005A2B77 /* ViewController.swift in Sources */,
+				3C91E99C2671C1850011282C /* RequestTableViewCell.swift in Sources */,
 				0B299D1D26531DF7005A2B77 /* AppDelegate.swift in Sources */,
 				0FA86EE92656446100F0D04B /* FeedTableViewController.swift in Sources */,
 				0FD8A53F2672080100755021 /* BookTableCellController.swift in Sources */,
 				0FA86EE62656435E00F0D04B /* BookTableViewCell.swift in Sources */,
 				0F61E6BD26563F440024011D /* VCAddBook.swift in Sources */,
 				0B299D1F26531DF7005A2B77 /* SceneDelegate.swift in Sources */,
+				3C91E99E2671DFDA0011282C /* NavigationA.swift in Sources */,
 				0F61E6BA26563BD80024011D /* VCAddBooko.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +472,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46T93546RZ;
+				DEVELOPMENT_TEAM = PA9897MS8H;
 				INFOPLIST_FILE = ARQUI_Hardcopi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46T93546RZ;
+				DEVELOPMENT_TEAM = PA9897MS8H;
 				INFOPLIST_FILE = ARQUI_Hardcopi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (

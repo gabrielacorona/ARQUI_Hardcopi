@@ -1,36 +1,33 @@
 //
-//  FeedTableViewController.swift
+//  RequestTableViewController.swift
 //  ARQUI_Hardcopi
 //
-//  Created by Caro Obregon on 20/05/21.
+//  Created by Arely Aceves on 09/06/21.
 //
 
 import UIKit
 
-struct Book {
-    var title: String
-    var name: String
-    var body: String
+struct Request {
+    var to: String
+    var from: String
+    var time: String
+    var status: String
+    var book: Book
 }
 
-class FeedTableViewController: UITableViewController {
-
-    // TODO que se wrappeen las descripciones
-//    var cellControllers = [TableCellController]()
-    let cellControllerFactory = MyCellControllerFactory()
-
-    let books = [
-        Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."),
-        Book(title: "Dos", name: "Vale Obregon", body: "AFMKAMDFKM"),
-        Book(title: "Tres", name: "Lucia Obregon", body: "AFMKAMDFKM"),
-    ]
+class RequestTableViewController: UITableViewController {
     
-    // TODO que se busquen
+    let requests = [
+        Request(to: "Gaby Corona", from: "Lucia Obregon", time: "2021-05-20", status: "Accepted", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Vale Obregon", from: "Lucia Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
+        Request(to: "Arely Aceves", from: "Lucia Obregon", time: "2021-05-20", status: "Pending", book: Book(title: "Uno", name: "Caro Obregon", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance."))
+    ]
     
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,29 +37,47 @@ class FeedTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return books.count
+        return requests.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        print(cellControllers)
-        return cellControllerFactory.cellControllers(item: "book").cellFromTableView(tableView, forIndexPath: indexPath)
-//        return cellControllers[indexPath.row].cellFromTableView(tableView, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "bookcell", for: indexPath) as! RequestTableViewCell
         
+        let request = requests[indexPath.row]
+        cell.bookTitle?.text = request.book.title
+        cell.authorName?.text = request.book.name
+        cell.bodyTxt?.text = request.book.body
+        cell.statusTxt?.text = request.status
+        
+        // Configure the cell...
+
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 180
     }
 
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
+        // Configure the cell...
 
+        return cell
+    }
+    */
+
+    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
+    */
 
     /*
     // Override to support editing the table view.
