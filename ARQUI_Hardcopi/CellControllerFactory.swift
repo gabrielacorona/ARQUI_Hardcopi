@@ -13,9 +13,11 @@ class MyCellControllerFactory {
     
     func cellControllers(item : String) -> TableCellController {
         if item == "book" {
-            return PhotoTableCellController(item: item)
+            print("in book")
+            return BookTableCellController(item: item)
         }
-        return PhotoTableCellController(item: item)
+        print(item)
+        return BookTableCellController(item: item)
     }
     
 }

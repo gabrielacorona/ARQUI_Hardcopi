@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class PhotoTableCellController: TableCellController {
+class BookTableCellController: TableCellController {
     
     let item: String
     

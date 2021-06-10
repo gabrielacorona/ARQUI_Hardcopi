@@ -48,7 +48,7 @@ class FeedTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        print(cellControllers)
-        return cellControllerFactory.cellControllers(item: "photo").cellFromTableView(tableView, forIndexPath: indexPath)
+        return cellControllerFactory.cellControllers(item: "book").cellFromTableView(tableView, forIndexPath: indexPath)
 //        return cellControllers[indexPath.row].cellFromTableView(tableView, forIndexPath: indexPath)
         
     }
