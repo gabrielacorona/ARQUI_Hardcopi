@@ -7,14 +7,18 @@
 
 import UIKit
 import GoogleBooksApiClient
+import SZTextView
 
 class VCAddBook: UIViewController {
     
 
+    @IBOutlet weak var isbnTxt: UITextField!
     @IBOutlet weak var titleTxt: UITextField!
     @IBOutlet weak var authorTxt: UITextField!
     @IBOutlet weak var genreTxt: UITextField!
-    @IBOutlet weak var conditionsTxt: UITextField!
+    @IBOutlet weak var idiomaTxt: UITextField!
+    @IBOutlet weak var conditionsTxt: SZTextView!
+    @IBOutlet weak var descriptionTxt: SZTextView!
     let client = GoogleBooksApiClient(session: URLSession.shared)
     
     override func viewDidLoad() {
@@ -63,6 +67,9 @@ class VCAddBook: UIViewController {
         let alert = UIAlertController(title: "¡Ups!",
                                         message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        DispatchQueue.main.async {
+        self.isbnTxt.text = ""
+        }
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -87,6 +94,8 @@ class VCAddBook: UIViewController {
             self.titleTxt.text = bookTitle
             self.authorTxt.text = bookAuthors
             self.genreTxt.text = bookGenre
+            self.idiomaTxt.text = bookLang
+            self.descriptionTxt.text = bookDesc
         }
         
         print("Titulo: " + bookTitle)
