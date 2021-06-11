@@ -17,7 +17,7 @@ class ReplyTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var accept: UIButton!
     @IBOutlet weak var deny: UIButton!
-    @IBAction func didTapButton(sender: UIButton) {
+    @IBAction func didDenyButton(sender: UIButton) {
         actionBlock?()
     }
     @IBAction func didTapAccept(sender: UIButton) {

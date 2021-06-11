@@ -10,11 +10,7 @@ import UIKit
 
 class ReplyTableViewController: UITableViewController {
     
-    let requests = [
-        Request(to: "Mariana Fernandez", from: "Gaby Corona", time: "2021-05-20", status: "Accepted", book: Book(title: "Conversations With Friends", name: "Rooney Mara", body: "Conversations with Friends is a book about four people: two best friends, Frances and Bobbi, and a married couple, Nick and Melissa. Frances and Nick end up falling, over time, into a strange romance.")),
-        Request(to: "Georgina Rodriguez", from: "Carlos Mendez", time: "2021-05-20", status: "Pending", book: Book(title: "Twilight", name: "Stephanie Meyers", body: "Fall in love with the addictive, suspenseful love story between a teenage girl and a vampire with the book that sparked a literary phenomenon and redefined romance for a generation")),
-        Request(to: "Mario Lopez", from: "Karla Martinez", time: "2021-05-20", status: "Pending", book: Book(title: "Don Quixote", name: "Miguel de Cervantes", body: "A founding work of Western literature, it is often labeled as the first modern novel and is considered one of the greatest works ever written."))
-    ]
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
