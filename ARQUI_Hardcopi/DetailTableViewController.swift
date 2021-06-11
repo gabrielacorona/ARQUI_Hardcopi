@@ -2,21 +2,20 @@
 //  DetailTableViewController.swift
 //  ARQUI_Hardcopi
 //
-//  Created by Arturo Aceves Pérez on 10/06/21.
+//  Created by Arely Aceves on 10/06/21.
 //
 
 import UIKit
 
 class DetailTableViewController: UITableViewController {
     
-    let users = [Profile(id: "1", name: "Gaby Corona", email: "gaba@mail.com", phone: "8127364526"), Profile(id: "2", name: "Vale Obregon", email: "vale@mail.com", phone: "8129304526"), Profile(id: "3", name: "Arely Aceves", email: "arely@mail.com", phone: "2039474526"), Profile(id: "4", name: "Caro Obregon", email: "caro@mail.com", phone: "8738462526")]
+    let cellControllerFactory = MyCellControllerFactory()
+    var tableCellController: TableCellController? = nil
     
-    var id = "0"
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
-
+        self.tableCellController = cellControllerFactory.cellControllers(item: "current")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -28,8 +27,26 @@ class DetailTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.tableCellController!.countFromtableView(tableView, numberOfRowsInSection: section)
     }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableCellController!.cellFromTableView(tableView, forIndexPath: indexPath)
+
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let response = self.tableCellController!.segueFromTableView(tableView,selectedRow: self.tableView.indexPathForSelectedRow!.row) {
+            print(response)
+
+        }
+    }
+
 
     
     

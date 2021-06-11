@@ -46,6 +46,8 @@
 		3C9C003726729A1B001561F2 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C003626729A1B001561F2 /* RequestTableViewController.swift */; };
 		3C9C00392672A9D5001561F2 /* HardcopiLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C00382672A9D5001561F2 /* HardcopiLogo.png */; };
 		3C9C003B2672AA76001561F2 /* RequestTableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C003A2672AA76001561F2 /* RequestTableCellController.swift */; };
+		3C9C003F2672C3C3001561F2 /* DetailTableCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C003E2672C3C3001561F2 /* DetailTableCellController.swift */; };
+		3C9C00452672F2E9001561F2 /* ReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C00442672F2E9001561F2 /* ReplyTableViewCell.swift */; };
 		3CA9734E265B4D21002770E7 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +83,6 @@
 		3C91E99B2671C1850011282C /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
 		3C91E99D2671DFDA0011282C /* NavigationA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationA.swift; sourceTree = "<group>"; };
 		3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTableViewController.swift; sourceTree = "<group>"; };
-		3C91E9A3267230E80011282C /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		3C91E9A52672310C0011282C /* NavigationD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationD.swift; sourceTree = "<group>"; };
 		3C91E9AF2672492C0011282C /* UserImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserImage.png; sourceTree = "<group>"; };
 		3C91E9B126725FFD0011282C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -91,6 +92,8 @@
 		3C9C003626729A1B001561F2 /* RequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		3C9C00382672A9D5001561F2 /* HardcopiLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HardcopiLogo.png; sourceTree = "<group>"; };
 		3C9C003A2672AA76001561F2 /* RequestTableCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableCellController.swift; sourceTree = "<group>"; };
+		3C9C003E2672C3C3001561F2 /* DetailTableCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableCellController.swift; sourceTree = "<group>"; };
+		3C9C00442672F2E9001561F2 /* ReplyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTableViewCell.swift; sourceTree = "<group>"; };
 		3CA9734D265B4D21002770E7 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		993C0DA99A5DA6F4506BB33C /* Pods_ARQUI_Hardcopi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARQUI_Hardcopi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80AB5BB8B67C3B547D27A45 /* Pods-ARQUI_Hardcopi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARQUI_Hardcopi.release.xcconfig"; path = "Target Support Files/Pods-ARQUI_Hardcopi/Pods-ARQUI_Hardcopi.release.xcconfig"; sourceTree = "<group>"; };
@@ -145,21 +148,22 @@
 				0B299D1E26531DF7005A2B77 /* SceneDelegate.swift */,
 				0B299D2026531DF7005A2B77 /* ViewController.swift */,
 				0F0C8D2F267212540067BF33 /* Main.storyboard */,
+				3C9C00442672F2E9001561F2 /* ReplyTableViewCell.swift */,
 				0FD8A53A267206CC00755021 /* CellControllerFactory.swift */,
 				0FD8A5372672066F00755021 /* TableCellController.swift */,
-				3C9C003426729811001561F2 /* DetailTableViewController.swift */,
 				0FD8A53E2672080100755021 /* BookTableCellController.swift */,
 				3C9C003A2672AA76001561F2 /* RequestTableCellController.swift */,
+				3C9C003E2672C3C3001561F2 /* DetailTableCellController.swift */,
 				3C91E99F2671E45D0011282C /* ReplyTableViewController.swift */,
 				0FA86EF6265650DD00F0D04B /* NavigationC.swift */,
 				3C91E9972671B4070011282C /* NavigationR.swift */,
 				3C91E99D2671DFDA0011282C /* NavigationA.swift */,
-				3C91E9A3267230E80011282C /* DetailTableViewCell.swift */,
 				3C91E9A52672310C0011282C /* NavigationD.swift */,
 				3C91E9B126725FFD0011282C /* Profile.swift */,
 				3C91E9B32672600D0011282C /* Request.swift */,
 				0FA86EE82656446100F0D04B /* FeedTableViewController.swift */,
 				3C9C003626729A1B001561F2 /* RequestTableViewController.swift */,
+				3C9C003426729811001561F2 /* DetailTableViewController.swift */,
 				0F61E6BC26563F440024011D /* VCAddBook.swift */,
 				0FA86EE52656435E00F0D04B /* BookTableViewCell.swift */,
 				3C91E99B2671C1850011282C /* RequestTableViewCell.swift */,
@@ -352,6 +356,7 @@
 				0FD8A53B267206CC00755021 /* CellControllerFactory.swift in Sources */,
 				0FD8A5382672066F00755021 /* TableCellController.swift in Sources */,
 				3C91E9A02671E45D0011282C /* ReplyTableViewController.swift in Sources */,
+				3C9C003F2672C3C3001561F2 /* DetailTableCellController.swift in Sources */,
 				0B299D2126531DF7005A2B77 /* ViewController.swift in Sources */,
 				3C91E99C2671C1850011282C /* RequestTableViewCell.swift in Sources */,
 				0B299D1D26531DF7005A2B77 /* AppDelegate.swift in Sources */,
@@ -361,6 +366,7 @@
 				0FA86EE62656435E00F0D04B /* BookTableViewCell.swift in Sources */,
 				0F61E6BD26563F440024011D /* VCAddBook.swift in Sources */,
 				0B299D1F26531DF7005A2B77 /* SceneDelegate.swift in Sources */,
+				3C9C00452672F2E9001561F2 /* ReplyTableViewCell.swift in Sources */,
 				3C91E9B226725FFD0011282C /* Profile.swift in Sources */,
 				3C91E9B42672600D0011282C /* Request.swift in Sources */,
 				3C91E99E2671DFDA0011282C /* NavigationA.swift in Sources */,

@@ -20,6 +20,10 @@ class MyCellControllerFactory {
             print("in request")
             return RequestTableCellController(item: item)
         }
+        if item == "current" {
+            print("in current")
+            return DetailTableCellController(item: item)
+        }
         print(item)
         return BookTableCellController(item: item)
     }
