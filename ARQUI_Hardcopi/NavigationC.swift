@@ -13,6 +13,7 @@ class NavigationC: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navBar.backItem?.backButtonTitle = "Atras"
         navBar.topItem?.title = "Nearby Books"
         navBar.backgroundColor = UIColor(red: 254/256, green: 244/256, blue: 233/256, alpha: 1)
         // Do any additional setup after loading the view.
